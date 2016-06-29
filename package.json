@@ -1,0 +1,26 @@
+{
+  "name": "semstrap",
+  "version": "1.0.0",
+  "description": "SemStrap is a framework for styling good old semantic HTML. Kinda like Bootstrap but without the classes.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamfrank/semantic-strap.git"
+  },
+  "author": "Frank Thomsen Renard",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/iamfrank/semantic-strap/issues"
+  },
+  "homepage": "https://github.com/iamfrank/semantic-strap#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
