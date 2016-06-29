@@ -19,7 +19,7 @@ source:       ./docs
 destination:  ./docs/_site
 layouts_dir:  ./docs/_layouts
 data_dir:     ./docs/_data
-includes_dir: ./_includes
+includes_dir: ./docs/_includes
 
 markdown: kramdown
 
