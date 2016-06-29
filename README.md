@@ -3,11 +3,14 @@
 
 SemanticStrap is a frontend "framework" for quickly adding a neat look and feel to web projects. It aims to have the convenience of frameworks like Bootstrap but using only semantic HTML for styling and vanilla Javascript for interactive widgets.
 
+Check it out on https://iamfrank.github.io/semantic-strap/
+
 ## Using it
 
-If you want to use SemanticStrap in your project, just download `semstrap.css` and add it to your HTML files like this:
+If you want to use SemanticStrap in your project, just download `semstrap.css` and add it to your HTML files along with a link to the *Open Sans* font from Google Web Fonts:
 ```
-<link rel="stylesheet" href="../semstrap.css">
+<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Lato:400,700'>
+<link rel='stylesheet' type='text/css' href='.../semstrap.css'>
 ```
 That's it. Take a look at the docs to see the cool stuff you can build with pure HTML elements and SemanticStrap.
 

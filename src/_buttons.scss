@@ -1,7 +1,14 @@
 button {
-    background-color: blue;
+    background-color: $highlight-color;
+    color: $background-color;
+    border: none;
+    box-shadow: $unit*0.1 $unit*0.1 $unit*0.05 $unit*0.125 lighten($main-color, 30%);
+    //border-bottom: solid $unit*0.125 lighten($main-color, 30%);
+    //border-right: solid $unit*0.125 lighten($main-color, 30%);
+    padding: $unit*0.5 $unit;
+    border-radius: $unit*0.25;
 }
 
 button:hover {
-    background-color: darken(blue, 20%);
+    background-color: lighten($highlight-color, 5%);
 }
