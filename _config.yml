@@ -15,11 +15,11 @@ url: "http://iamfrank.github.io/semantic-strap" # the base hostname & protocol f
 github_username:  iamfrank
 
 # Build settings
-source:       ./docs
-destination:  ./docs/_site
-layouts_dir:  ./docs/_layouts
-data_dir:     ./docs/_data
-includes_dir: ./docs/_includes
+source:       ./
+destination:  ./_site
+layouts_dir:  ./_layouts
+data_dir:     ./_data
+includes_dir: ./_includes
 
 markdown: kramdown
 
