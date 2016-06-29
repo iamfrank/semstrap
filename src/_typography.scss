@@ -3,3 +3,41 @@ body {
     line-height: 1.3;
     font-family: 'Open Sans', sans-serif;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    margin: $unit 0 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: $unit*1.6;
+}
+
+h2 {
+    font-size: $unit*1.35;
+}
+
+h3 {
+    font-size: $unit*1.25;
+}
+
+h4 {
+    font-size: $unit*1.1;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: $unit;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: $unit*0.8;
+    text-transform: uppercase;
+}
