@@ -2,13 +2,12 @@
 layout: default
 ---
 
-<section>
-
     <h1>Components</h1>
   
     {% for component in site.components %}
+    <section>
         <h2>{{ component.title }}</h2>
         {{ component.content }}
+    </section>
     {% endfor %}
-    
-</section>
+   
