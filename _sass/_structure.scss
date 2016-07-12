@@ -1,20 +1,37 @@
+body,
 main {
-    padding: $unit;
+    
+}
+
+body {
+    
+}
+
+main {
+    padding: $unit*2;
+}
+
+aside {
+       
 }
 
 article {
-    padding: $unit;
+    background-color: $background-color;
+    padding: $unit*2;
+    margin: $unit 0;
+    box-shadow: 0 $unit*0.1 $unit*0.1 darken($background-color, 30%);
 }
 
 section {
-    padding: $unit;
+    padding: $unit*2;
 }
 
 header {
     background-color: $highlight-color;
     margin: 0;
-    padding: $unit $unit*2;
+    padding: $unit*2;
     color: $background-color;
+    box-shadow: 0 $unit*0.3 $unit*0.3 darken($background-color, 30%);
     
     a,
     a:link,
@@ -31,7 +48,7 @@ header {
 footer {
     background-color: $main-color;
     color: $background-color;
-    padding: $unit $unit*2;
+    padding: $unit*2;
     margin: 0;
     
     a,

@@ -1,15 +1,20 @@
 ---
 layout: default
 ---
-<main>
 
 <h1>Elements</h1>
-  
+
+<nav>
+    <ul>
+    {% for component in site.components %}
+        <li><a href="#{{ component.title }}">{{ component.title }}</a></li>
+    {% endfor %}
+    </ul>
+</nav>  
+
 {% for component in site.components %}
-<section>
+<article id="{{ component.title }}">
     <h2>{{ component.title }}</h2>
     {{ component.content }}
-</section>
+</article>
 {% endfor %}
-
-</main>

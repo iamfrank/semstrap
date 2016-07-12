@@ -16,7 +16,7 @@ html {
  */
 
 body {
-    background-color: $background-color;
+    background-color: darken($background-color, 10%);
     padding: 0;
     margin: 0;
     color: $main-color;
@@ -420,8 +420,4 @@ textarea {
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
-}
-
-* + * {
-    margin-bottom: $unit;
 }
