@@ -9,17 +9,17 @@
 title: SemStrap docs
 email: frank.thomsen@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  SemStrap is a framework for styling good old semantic HTML. Kinda like Bootstrap but without the classes.
+  Semstrap ("semantic bootstrap") is a layer of CSS that improves the look and feel of standard HTML elements.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://iamfrank.github.io/semantic-strap" # the base hostname & protocol for your site
+url: "http://iamfrank.github.io/semstrap" # the base hostname & protocol for your site
 github_username:  iamfrank
 
 # Build settings
-source:       ./docs
-destination:  ./docs/_site
-layouts_dir:  ./docs/_layouts
-data_dir:     ./docs/_data
-includes_dir: ./docs/_includes
+source:       ./
+destination:  ./_site
+layouts_dir:  ./_layouts
+data_dir:     ./_data
+includes_dir: ./_includes
 
 markdown: kramdown
 
