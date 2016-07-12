@@ -2,12 +2,11 @@
 layout: default
 ---
 
-    <h1>Components</h1>
+<h1>Components</h1>
   
-    {% for component in site.components %}
-    <section>
-        <h2>{{ component.title }}</h2>
-        {{ component.content }}
-    </section>
-    {% endfor %}
-   
+{% for component in site.components %}
+<section>
+    <h2>{{ component.title }}</h2>
+    {{ component.content }}
+</section>
+{% endfor %}
