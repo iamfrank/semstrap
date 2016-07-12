@@ -1,0 +1,47 @@
+main {
+    padding: $unit;
+}
+
+article {
+    padding: $unit;
+}
+
+section {
+    padding: $unit;
+}
+
+header {
+    background-color: $highlight-color;
+    margin: 0;
+    padding: $unit $unit*2;
+    color: $background-color;
+    
+    a,
+    a:link,
+    a:visited {
+        color: lighten($accent-color, 10%);
+    }
+    a:hover,
+    a:active {
+        color: lighten($accent-color, 20%);
+    }
+    
+}
+
+footer {
+    background-color: $main-color;
+    color: $background-color;
+    padding: $unit $unit*2;
+    margin: 0;
+    
+    a,
+    a:link,
+    a:visited {
+        color: lighten($accent-color, 10%);
+    }
+    a:hover,
+    a:active {
+        color: lighten($accent-color, 20%);
+    }
+    
+}

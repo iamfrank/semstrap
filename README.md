@@ -28,28 +28,20 @@ Check it out on https://iamfrank.github.io/semstrap/
 
 ## Using it
 
-If you want to use Semstrap in your project, just download `semstrap.css` and add it to your HTML files along with a link to the *Open Sans* font from Google Web Fonts:
+If you want to use Semstrap in your project, just download `semstrap.css` [from here](/_site/css/semstrap.css) and add it to your HTML files along with a link to the *Open Sans* font from Google Web Fonts:
 ```
 <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Lato:400,700'>
 <link rel='stylesheet' type='text/css' href='.../semstrap.css'>
 ```
-That's it. Take a look at the docs to see the cool stuff you can build with pure HTML elements and Semstrap.
+That's it. Take a look at the [docs](https://iamfrank.github.io/semstrap/) to see the cool stuff you can build with pure HTML elements and Semstrap.
 
 
-## Building it
+## Build and customize
 
-Want to create your own flavour of Semstrap. Go ahead:
-
-You'll need to have [npm](https://www.npmjs.com/) and [gulp](http://gulpjs.com/) installed to build Semstrap yourself. Then you can clone the project and run the gulp task to create a new build of semstrap.min.css in the `dist` directory.
+If you want to have your own version of the documentation pages running, you'll need to install [jekyll](https://jekyllrb.com/), git clone the project and run the serve command from your console.
 ```
 $ git clone https://github.com/iamfrank/semantic-strap.git // Clone the SemanticStrap git project
-$ npm update
-$ npm install
-$ gulp
+$ jekyll serve
 ```
-The `gulp` task will collect and minify all the [.scss](http://sass-lang.com/) files in `src` directory and build a new `semstrap.css` in the `dist` directory.
-You can run
-```
-$ gulp sass:watch
-```
-If you want to have a watcher update the `semstrap.css` file while you work on the .scss files.
+Then go look up http://localhost:4000/ in a web browser.
+While running the server, Jekyll watches for changes in the files and rebuilds the. Now you can change any styles you want in the [_sass](/_sass) directory and see them applied to the documentation pages.

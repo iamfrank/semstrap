@@ -20,9 +20,14 @@ destination:  ./_site
 layouts_dir:  ./_layouts
 data_dir:     ./_data
 includes_dir: ./_includes
+sass_dir: ./_sass
 
 markdown: kramdown
 
 # Collections
 collections:
 - components
+
+# SASS config
+sass:
+    style: compressed
