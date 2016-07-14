@@ -1,7 +1,8 @@
 body {
     font-size: $unit;
     line-height: 1.25;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $base-font;
+    color: rgba($foreground-color, 0.87);
 }
 
 body,
@@ -70,6 +71,7 @@ h6 {
 blockquote {
     font-size: $unit*1.25;
     line-height: 1.25;
+    color: rgba($foreground-color, 0.54);
 }
 
 @media (min-width: 43.75em) {

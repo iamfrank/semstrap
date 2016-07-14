@@ -1,0 +1,6 @@
+hr {
+    border: none;
+    border-top: solid $unit*0.1 rgba($foreground-color, 0.12);
+    padding: 0;
+    margin: $unit*2 0;
+}

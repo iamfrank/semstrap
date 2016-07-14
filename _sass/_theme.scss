@@ -1,9 +1,18 @@
 /*
- * Theme variables, readable by SASS
+ * SASS theme variables
  */
 
+/* Colors */
+$primary-color: #4378D1;
+$secondary-color: darken($primary-color, 20%);
+$accent-color: #f92;
+
 $background-color: #fff;
-$main-color: #333;
-$highlight-color: #4378D1;
-$accent-color: #f90;
+$foreground-color: #000;
+
+
+/* Units */
 $unit: 1rem;
+
+/* Fonts */
+$base-font: 'Open Sans', sans-serif;

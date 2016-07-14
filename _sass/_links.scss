@@ -1,10 +1,10 @@
 a,
 a:link,
 a:visited {
-    color: $highlight-color;
+    color: $accent-color;
     text-decoration: none;
 }
 a:hover,
 a:active {
-    color: darken($highlight-color, 20%);
+    color: darken($accent-color, 20%);
 }

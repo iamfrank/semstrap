@@ -1,0 +1,18 @@
+fieldset {
+    display: block;
+    background-color: darken($background-color, 10%);
+    padding: $unit;
+    border: none;
+}
+
+label {
+    display: block;
+    color: rgba($foreground-color, 0.54);
+}
+
+input,
+textarea,
+select {
+    border: solid $unit*0.1 darken($background-color, 20%);
+    padding: $unit*0.25 $unit*0.5;
+}

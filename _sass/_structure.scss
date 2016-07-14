@@ -27,7 +27,7 @@ section {
 }
 
 header {
-    background-color: $highlight-color;
+    background-color: $primary-color;
     margin: 0;
     padding: $unit*2;
     color: $background-color;
@@ -46,7 +46,7 @@ header {
 }
 
 footer {
-    background-color: $main-color;
+    background-color: $secondary-color;
     color: $background-color;
     padding: $unit*2;
     margin: 0;
