@@ -1,0 +1,38 @@
+.infinity-scroll {
+    height: 70vh;
+    overflow: auto;
+    width: 100%;
+    position: relative;
+    box-shadow: inset 0 $unit*0.2 $unit*0.2 rgba($foreground-color, 0.12);
+    margin-bottom: $unit;
+}
+.infinity-scroll__templates,
+.state,
+.invisible {
+    display: none;
+}
+.infinity-scroll__list {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    contain: layout;
+}
+.infinity-scroll__item {
+    border-bottom: solid $unit*0.1 rgba($foreground-color, 0.12);
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    contain: layout;
+}
+.infinity-scroll__content {
+    padding: $unit;
+}
+.infinity-scroll__tombstone .infinity-scroll__content {
+    color: rgba($foreground-color, 0.54)
+}

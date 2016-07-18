@@ -1,0 +1,153 @@
+---
+layout: default
+name: forms
+title:  "Forms"
+collection: components
+---
+
+<form>
+    <fieldset>
+        <label for="myInputField">Input field</label>
+        <input id="myInputField" type="text" placeholder="Enter some text here ...">
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+
+<div class="codeview">
+    <label class="codeview__label" for="forms">Show HTML markup</label>
+    <input class="codeview__checkbox" type="checkbox" id="forms">
+    {% highlight html %}
+    <form>
+        <fieldset>
+            <label for="myInputField">Input field</label>
+            <input id="myInputField" type="text" placeholder="Enter some text here ...">
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    {% endhighlight %}
+</div>
+
+<hr>
+
+<h3>Special input fields</h3>
+<p>There are specialized input fields available. These look like the text input field but trigger different keyboard layouts on mobile and tablet devices and can make use of validation.</p>
+
+<form>
+    <fieldset>    
+        <label for="mySearchField">Search</label>
+        <input id="mySearchField" type="search" placeholder="Enter search">
+    </fieldset>
+    <fieldset>
+        <label for="myEmailField">Email</label>
+        <input id="myEmailField" type="email" placeholder="Enter email address">
+    </fieldset>
+    <fieldset>
+        <label for="myURLField">URL</label>
+        <input id="myURLField" type="url" placeholder="Enter URL">
+    </fieldset>
+    <fieldset>
+        <label for="myPhoneField">Phone</label>
+        <input id="myPhoneField" type="phone" placeholder="Enter phone number">
+    </fieldset>
+</form>
+
+<div class="codeview">
+    <label class="codeview__label" for="specfield">Show HTML markup</label>
+    <input class="codeview__checkbox" type="checkbox" id="specfield">
+    {% highlight html %}
+    <form>
+        <fieldset>    
+            <label for="mySearchField">Search</label>
+            <input id="mySearchField" type="search" placeholder="Enter search">
+        </fieldset>
+        <fieldset>
+            <label for="myEmailField">Email</label>
+            <input id="myEmailField" type="email" placeholder="Enter email address">
+        </fieldset>
+        <fieldset>
+            <label for="myURLField">URL</label>
+            <input id="myURLField" type="url" placeholder="Enter URL">
+        </fieldset>
+        <fieldset>
+            <label for="myPhoneField">Phone</label>
+            <input id="myPhoneField" type="phone" placeholder="Enter phone number">
+        </fieldset>
+    </form>
+    {% endhighlight %}
+</div>
+
+<hr>
+
+<h3>Checkbox</h3>
+
+<form>
+    <fieldset>    
+        <label for="myCheckboxA">
+            <input id="myCheckboxA" type="checkbox" checked>
+            Checkbox A
+        </label>
+        <label for="myCheckboxB">
+            <input id="myCheckboxB" type="checkbox">
+            Checkbox B
+        </label>
+    </fieldset>
+</form>
+
+<div class="codeview">
+    <label class="codeview__label" for="checkbox">Show HTML markup</label>
+    <input class="codeview__checkbox" type="checkbox" id="checkbox">
+    {% highlight html %}
+    <form>
+        <fieldset>    
+            <label for="myCheckboxA">Checkbox A</label>
+            <input id="myCheckboxA" type="checkbox" checked>
+            <label for="myCheckboxB">Checkbox B</label>
+            <input id="myCheckboxB" type="checkbox">
+        </fieldset>
+    </form>
+    {% endhighlight %}
+</div>
+
+<hr>
+
+<h3>Radio button</h3>
+
+<form>
+    <fieldset>    
+        <label for="myRadioA">
+            <input id="myRadioA" type="radio" name="radioButtonSet" checked>
+            Radio button A
+        </label>
+        <label for="myRadioB">
+            <input id="myRadioB" type="radio" name="radioButtonSet">
+            Radio button B
+        </label>
+        <label for="myRadioC">
+            <input id="myRadioC" type="radio" name="radioButtonSet">
+            Radio button C
+        </label>
+    </fieldset>
+</form>
+
+<div class="codeview">
+    <label class="codeview__label" for="radiobtn">Show HTML markup</label>
+    <input class="codeview__checkbox" type="checkbox" id="radiobtn">
+    {% highlight html %}
+    <form>
+        <fieldset>    
+            <label for="myRadioA">
+                <input id="myRadioA" type="radio" name="radioButtonSet" checked>
+                Radio button A
+            </label>
+            <label for="myRadioB">
+                <input id="myRadioB" type="radio" name="radioButtonSet">
+                Radio button B
+            </label>
+            <label for="myRadioC">
+                <input id="myRadioC" type="radio" name="radioButtonSet">
+                Radio button C
+            </label>
+        </fieldset>
+    </form>
+    {% endhighlight %}
+</div>

@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<h1>Components</h1>
+
+<nav>
+    {% for component in site.components %}
+    <a href="#{{ component.title }}">{{ component.title }}</a>
+    {% endfor %}
+</nav>
+
+{% for component in site.components %}
+<article id="{{ component.title }}">
+    <h2>{{ component.title }}</h2>
+    {{ component.content }}
+</article>
+{% endfor %}
