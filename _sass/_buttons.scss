@@ -1,6 +1,7 @@
 button,
 input[type="submit"],
-input[type="button"] {
+input[type="button"],
+input[type="reset"] {
     background-color: $accent-color;
     color: $background-color;
     box-shadow: 0 $unit*0.1 $unit*0.1 darken($background-color, 30%);
@@ -10,7 +11,9 @@ input[type="button"] {
     cursor: pointer;
 }
 
-input[type="button"] {
+input[type="button"],
+form button,
+input[type="reset"] {
     background-color: darken($background-color, 20%);
     color: $foreground-color;
 }
@@ -20,13 +23,17 @@ input[type="submit"]:hover {
     background-color: lighten($accent-color, 10%);
 }
 
-input[type="button"]:hover {
+input[type="button"]:hover,
+form button:hover,
+input[type="reset"]:hover {
     background-color: darken($background-color, 10%);
 }
 
 button:active,
 input[type="submit"]:active,
-input[type="button"]:active {
+input[type="button"]:active,
+form button:active,
+input[type="reset"]:active {
     box-shadow: 0 $unit*0.2 $unit*0.5 darken($background-color, 30%);
 }
 

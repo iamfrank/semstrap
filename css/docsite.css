@@ -12,6 +12,7 @@
 
 .codeview code {
     background-color: #eee;
+    padding-bottom: 0;
 }
 
 .codeview__label {

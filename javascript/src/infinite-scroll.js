@@ -1413,11 +1413,13 @@ function numDomNodes(node) {
     return node.children.length + childrenCount.reduce((p, c) => p + c, 0);
 };
 
-document.addEventListener('DOMContentLoaded', function() {
-    window.scroller =
-      new InfiniteScroller(
-        document.querySelector('.infinity-scroll__list'),
-        new ContentSource()
-      );
-
-});
+if (document.querySelector('.infinity-scroll')) {
+    document.addEventListener('DOMContentLoaded', function() {
+        window.scroller =
+          new InfiniteScroller(
+            document.querySelector('.infinity-scroll__list'),
+            new ContentSource()
+          );
+    
+    });
+};
