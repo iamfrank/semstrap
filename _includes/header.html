@@ -3,9 +3,9 @@
     <h1>{{ site.title }}</h1>
     
     <nav>
-        <a href="/">Home</a>
-        <a href="/pages/elements.html">Elements</a>
-        <a href="/pages/components.html">Components</a>
+        <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
+        <a href="{{ '/pages/elements.html' | prepend: site.baseurl }}">Elements</a>
+        <a href="{{ '/pages/components.html' | prepend: site.baseurl }}">Components</a>
     </nav>
     
 </header>
