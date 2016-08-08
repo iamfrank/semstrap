@@ -10,8 +10,8 @@ title: Semstrap documentation
 email: frank@magenta.dk
 description: > # this means to ignore newlines until "baseurl:"
   Semstrap ("semantic bootstrap") is a layer of CSS that improves the look and feel of standard HTML elements.
-baseurl: "/semstrap" # the subpath of your site, e.g. /blog
-url: "http://iamfrank.github.io/" # the base hostname & protocol for your site
+baseurl: "/semstrap"
+url: "http://iamfrank.github.io/"
 github_username:  iamfrank
 
 # Build settings
