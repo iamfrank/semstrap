@@ -6,7 +6,6 @@
     overflow: hidden;
     padding: 0;
     margin: 0;
-    transition: all 0.3s ease-out;
     background: #eee;
     display: block;
 }
@@ -26,8 +25,17 @@
 }
 
 .codeview__checkbox:checked + .highlight {
-    transition: all 0.3s ease-out;
-    height: 10rem;
+    height: auto;
     width: 100%;
     overflow: auto;
+}
+
+
+@media screen and (min-width: 30rem) {
+    
+    nav.subnav a {
+        display: inline-block;
+        margin-bottom: 0.25rem;
+    }
+
 }

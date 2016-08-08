@@ -19,9 +19,10 @@ nav {
     a:visited {
         border-top: solid 1px rgba($foreground-color, 0.12);
         display: block;
-        padding: $unit;
+        padding: $unit*0.5 $unit;
         background-color: $background-color;
         color: $accent-color;
+        border-radius: $unit*0.25;
     }
     a:hover,
     a:active {
