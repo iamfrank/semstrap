@@ -31,6 +31,32 @@
     overflow: auto;
 }
 
+.brand-header {
+    padding-bottom: 0;
+}
+
+.brand-header img {
+    background-color: #fff;
+    padding: 0.5rem 0.75rem 0.25rem;
+    height: 2.5rem;
+    width: auto;
+    border-radius: 3rem;
+    margin: 0 0.5rem -2rem 0;
+    vertical-align: top;
+}
+
+.brand-header span {
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 100;
+    font-size: 2rem;
+    vertical-align: top;
+}
+
+.brand-line {
+    margin: -1rem 0 1rem 3.75rem;
+    color: rgba(255,255,255,0.76);
+}
 
 @media screen and (min-width: 30rem) {
     

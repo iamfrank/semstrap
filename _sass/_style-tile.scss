@@ -1,0 +1,124 @@
+/*
+ * Style tile styles
+ * These are for the style tile only. You can ignore these for a production environment
+ */
+
+
+// Layout
+
+#style-tile-body {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#graphic-section,
+#typography-section {
+    flex: 1;
+}
+
+
+// Color swatches
+
+.color-swatch-1,
+.color-swatch-2,
+.color-swatch-3,
+.color-swatch-4,
+.color-swatch-5 {
+    display: inline-block;
+    height: $unit*3;
+    width: $unit*3;
+    margin: $unit*0.5;
+}
+
+.color-swatch-1 {
+    background-color: $primary-color;
+}
+
+.color-swatch-2 {
+    background-color: $secondary-color;
+}
+
+.color-swatch-3 {
+    background-color: $accent-color;
+}
+.color-swatch-4 {
+    background-color: $foreground-color;
+}
+.color-swatch-5 {
+    background-color: $background-color;
+}
+
+
+// Graphic flourish patterns
+
+.pattern-1,
+.pattern-2,
+.pattern-3 {
+    display: inline-block;
+    width: $unit*5;
+    height: $unit*5;
+    padding: $unit*0.5;
+    background-color: $background-color;
+    overflow: hidden;
+    margin: 0 $unit 0 0;
+    border: solid $unit*0.5 darken($background-color, 15%);
+}
+
+.pattern-1 img {
+    vertical-align: bottom;
+}
+
+.pattern-2 span {
+    color: $primary-color;
+    font-size: $unit*3;
+    display: block;
+    font-weight: bold;
+}
+
+.pattern-3 span {
+    background-color: $accent-color;
+    color: $background-color;
+    border-radius: $unit*2.5;
+    display: block;
+    padding: $unit;
+    font-size: $unit*2;
+    line-height: 1;
+    transform: rotate(90deg);
+    margin: $unit*0.5;
+}
+
+
+// Typography examples
+
+.word-1,
+.word-2,
+.word-3,
+.word-4 {
+    display: inline-block;
+    padding: $unit*0.5;
+    line-height: 1;
+}
+
+.word-1 {
+    color: $primary-color;
+    font-size: $unit*2;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.word-2 {
+    color: $secondary-color;
+    font-size: $unit*5;
+    font-weight: 100;
+}
+
+.word-3 {
+    color: $accent-color;
+    font-size: $unit*3;
+}
+
+.word-4 {
+    color: $foreground-color;
+    font-size: $unit*1.5;
+    font-weight: bold;
+}

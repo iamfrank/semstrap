@@ -1,11 +1,13 @@
 <header>
     
-    <h1>{{ site.title }}</h1>
+    <h1 class="brand-header"><img src="{{ '/images/logo.svg' | prepend: site.baseurl }}" alt=""><span>Semstrap</span></h1>
+    <p class="brand-line">{{ site.title }}</p>
     
     <nav>
         <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
         <a href="{{ '/pages/elements.html' | prepend: site.baseurl }}">Elements</a>
         <a href="{{ '/pages/components.html' | prepend: site.baseurl }}">Components</a>
+        <a href="{{ '/pages/style-tile.html' | prepend: site.baseurl }}">Style tile</a>
     </nav>
     
 </header>
