@@ -14,7 +14,12 @@
 @import 'thematic-break';
 
 // HTML semantic layout
-@import 'structure';
+@import 'header';
+@import 'main';
+@import 'nav';
+@import 'article';
+@import 'section';
+@import 'footer';
 
 // Javascript widgets
 @import 'infinite-scroll';

@@ -1,0 +1,18 @@
+nav {
+    padding: 0 $unit*2;
+    
+    a,
+    a:link,
+    a:visited {
+        border-top: solid 1px rgba($foreground-color, 0.12);
+        display: block;
+        padding: $unit*0.5 0;
+        color: $accent-color;
+        margin: 0;
+    }
+    a:hover,
+    a:active {
+        background-color: $accent-color;
+        color: $background-color;
+    }
+}

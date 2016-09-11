@@ -1,0 +1,10 @@
+main {
+    text-align: center;
+}
+
+main > * {
+    text-align: left;
+    max-width: $unit*45;
+    margin: $unit auto 0;
+    box-sizing: border-box;
+}

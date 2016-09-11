@@ -1,0 +1,49 @@
+header {
+    background-color: $primary-color;
+    margin: 0;
+    padding: 0;
+    color: $background-color;
+    box-shadow: 0 $unit*0.3 $unit*0.3 darken($background-color, 30%);
+    text-align: center;
+    
+    a,
+    a:link,
+    a:visited {
+        color: lighten($accent-color, 10%);
+    }
+    a:hover,
+    a:active {
+        color: lighten($accent-color, 20%);
+    }
+    nav {
+        display: flex;
+        flex-flow: row nowrap;
+        a,
+        a:link,
+        a:visited {
+            flex: 1;
+            display: inline-block;
+            padding: $unit $unit*0.5;
+            background-color: darken($primary-color, 10%);
+            color: $background-color;
+            border: none;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: center;
+            white-space: nowrap;
+            text-transform: uppercase;
+            font-size: $unit*0.8;
+        }
+        a:hover,
+        a:active {
+            
+        }
+    }
+    
+    & > * {
+        text-align: left;
+        max-width: $unit*45;
+        margin: $unit auto 0;
+        box-sizing: border-box;
+    }
+}

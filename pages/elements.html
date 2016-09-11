@@ -2,16 +2,15 @@
 layout: default
 ---
 
-<h1>Elements</h1>
-
 <nav class="subnav">
+    <h1>Elements</h1>
     {% for element in site.elements %}
     <a href="#{{ element.title }}">{{ element.title }}</a>
     {% endfor %}
 </nav>
 
 {% for element in site.elements %}
-<article id="{{ element.title }}">
+<article id="{{ element.title }}" class="article">
     <h2>{{ element.title }}</h2>
     {{ element.content }}
 </article>

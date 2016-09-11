@@ -1,0 +1,5 @@
+article {
+    padding: $unit*2;
+    background-color: $background-color;
+    box-shadow: 0 $unit*0.1 $unit*0.1 darken($background-color, 30%);
+}

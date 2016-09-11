@@ -1,0 +1,25 @@
+footer {
+    text-align: center;
+    background-color: $secondary-color;
+    color: $background-color;
+    padding: $unit*2;
+    margin: 0;
+    
+    a,
+    a:link,
+    a:visited {
+        color: lighten($accent-color, 10%);
+    }
+    a:hover,
+    a:active {
+        color: lighten($accent-color, 20%);
+    }
+    
+}
+
+footer > * {
+    text-align: left;
+    max-width: $unit*45;
+    margin: $unit auto 0;
+    box-sizing: border-box;
+}
