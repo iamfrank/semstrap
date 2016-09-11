@@ -1,11 +1,16 @@
 <header>
     
-    <h1 class="brand-header"><img src="{{ '/images/logo.svg' | prepend: site.baseurl }}" alt=""><span>Semstrap</span></h1>
-    <p class="brand-line">{{ site.title }}</p>
+    <h1 class="brand-header">
+        <img src="{{ '/images/logo.svg' | prepend: site.baseurl }}" alt="">
+        <span>{{ site.title }}</span>
+    </h1>
     
-    <nav>
+    <label class="menu__label" for="menu-input">Menu</label>
+    <input class="menu__checkbox" type="checkbox" id="menu-input">
+    
+    <nav class="menu__nav">
         <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
-        <a href="{{ '/pages/elements.html#Buttons' | prepend: site.baseurl }}">Elements</a>
+        <a href="{{ '/pages/elements.html' | prepend: site.baseurl }}">Elements</a>
         <a href="{{ '/pages/components.html' | prepend: site.baseurl }}">Components</a>
         <a href="{{ '/pages/style-tile.html' | prepend: site.baseurl }}">Style tile</a>
     </nav>

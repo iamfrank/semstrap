@@ -30,18 +30,14 @@
     <path
        id="path4232"
        d="m 464.99327,300.35148 185,65 0,50 -185,-65 z"
-       style="fill:#4378d1;fill-opacity:0.54140127;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:#ffffff;fill-opacity:0.54140127;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        id="path4230"
        d="m 589.99327,205.35148 -125,95 0,50 160,-85 z"
-       style="fill:#4378d1;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       id="path4236"
-       d="m 464.99327,475.35148 185,0 -185,-60 z"
-       style="fill:#4378d1;fill-opacity:0.54140127;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        id="path4234"
        d="m 649.99327,365.35148 -185,50 0,60 185,-60 z"
-       style="fill:#4378d1;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   </g>
 </svg>

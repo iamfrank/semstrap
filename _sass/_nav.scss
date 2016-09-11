@@ -1,12 +1,12 @@
 nav {
-    padding: 0 $unit*2;
-    
+    padding: 0;
+
     a,
     a:link,
     a:visited {
         border-top: solid 1px rgba($foreground-color, 0.12);
         display: block;
-        padding: $unit*0.5 0;
+        padding: $unit*0.5 $unit*2;
         color: $accent-color;
         margin: 0;
     }

@@ -23,3 +23,11 @@ footer > * {
     margin: $unit auto 0;
     box-sizing: border-box;
 }
+
+@media screen and (min-width: 45rem) {
+    
+    footer {
+        margin: $unit*2 0 0;
+    }
+    
+}

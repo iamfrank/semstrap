@@ -1,38 +1,46 @@
 
-
-/* Content navigation */
-
-.subnav {
-    padding-right: 2rem;
-}
-
-
 /* Header */
 
+.brand-header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
 .brand-header img {
-    background-color: #fff;
-    padding: 0.5rem 0.75rem 0.25rem;
-    height: 2.5rem;
-    width: auto;
-    border-radius: 3rem;
-    margin: 0 0.5rem -2rem 0;
-    vertical-align: top;
+    height: auto;
+    width: 10vw;
+    padding: 0.5rem 3vw 0.5rem 0;
+}
+
+.brand-header span {
+    font-size: 8vw;
+    padding: 0.5rem 0;
+    margin: 0; 
+}
+
+.menu__label,
+.menu__checkbox {
+    display: none;
 }
 
 
 /* Code view and highlighting */
+
+.highlight {
+    margin: 0;
+}
 
 .codeview .highlight {
     height: 1px;
     width: 1px;
     overflow: hidden;
     padding: 0;
-    margin: 0;
     background: #eee;
     display: block;
 }
 
-.codeview code {
+.highlight code {
     background-color: #eee;
     padding-bottom: 0;
 }
@@ -41,6 +49,7 @@
     display: block;
     color: #4378D1;
     padding: 0.5em 0;
+    cursor: pointer;
 }
 
 .codeview__checkbox {
@@ -58,7 +67,76 @@
 
 /* Media queries*/
 
+@media screen and (max-width: 29.9rem) {
+    
+    .menu__label {
+        padding: 1rem;
+        display: block;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        background-color: rgba(0,0,0,0.2);
+        width: auto;
+        height: auto;
+        text-align: center;
+        line-height: 1;
+        cursor: pointer;
+        position: absolute;
+        margin: 0;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        border-radius: 0.25rem;
+    }
+    
+    .menu__label:hover,
+    .menu__label:active {
+        background-color: rgba(0,0,0,0.4);
+    }
+    
+    .menu__checkbox {
+        display: none;
+    }
+    
+    .menu__nav {
+        margin: 0;
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+    
+    .menu__checkbox:checked + .menu__nav {
+        height: auto;
+        width: 100%;
+        overflow: auto;
+        box-shadow: 0 0.1rem 0.1rem rgba(0,0,0,0.33);
+    }
+    
+}
+
 @media screen and (min-width: 30rem) {
     
-
+    /* Column layout */
+    
+    .cols {
+        display: flex;
+        flex-flow: row nowrap;
+        
+    }
+    
+    .col1 {
+        flex: 1;  
+    }
+    
+    .col2 {
+        flex: 2;
+    }
+    
+    .col3 {
+        flex: 3;
+    }
+    
 }
