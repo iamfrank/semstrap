@@ -1,33 +1,42 @@
 footer {
-    text-align: center;
-    background-color: $secondary-color;
+    background-color: darken($background-color, 33%);
     color: $background-color;
-    padding: $unit*2;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     margin: 0;
+    padding: $unit;
     
     a,
     a:link,
     a:visited {
-        color: lighten($accent-color, 10%);
+        color: $foreground-color;
     }
     a:hover,
     a:active {
-        color: lighten($accent-color, 20%);
+        color: lighten($accent-color, 50%);
     }
     
 }
 
 footer > * {
-    text-align: left;
-    max-width: $unit*45;
-    margin: $unit auto 0;
+    width: 100%;
+    max-width: $unit*50;
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 45rem) {
+@media screen and (min-width: 30rem) {
     
     footer {
-        margin: $unit*2 0 0;
+        padding: $unit*2;
+    }
+       
+}
+
+@media screen and (min-width: 50rem) {
+    
+    footer {
+        margin-top: $unit*2;
     }
     
 }

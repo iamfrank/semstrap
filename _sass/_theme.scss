@@ -3,12 +3,12 @@
  */
 
 /* Colors */
-$primary-color: #4378D1;
-$secondary-color: darken($primary-color, 20%);
-$accent-color: #f92;
+$primary-color: #00487F;
+$secondary-color: complement($primary-color);
+$accent-color: invert($primary-color);
 
-$background-color: #fff;
-$foreground-color: #000;
+$background-color: #eee;
+$foreground-color: #333;
 
 
 /* Units */

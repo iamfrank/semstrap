@@ -1,87 +1,83 @@
 header {
-    padding: 0 $unit*2;
+    padding: 0 $unit;
 }
 
 body > header {
     background-color: $primary-color;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     color: $background-color;
     box-shadow: 0 $unit*0.3 $unit*0.3 darken($background-color, 30%);
-    text-align: center;
     
     h1 {
-        padding: $unit $unit*2;
-        margin: 0 auto;
-    }
-    
-    a,
-    a:link,
-    a:visited {
-        color: lighten($accent-color, 10%);
-    }
-    
-    a:hover,
-    a:active {
-        color: lighten($accent-color, 20%);
+        padding: $unit;
     }
     
     nav {
-        margin-top: 0;
-        padding: 0 $unit;
-        text-align: right;
-        
-        a,
-        a:link,
-        a:visited {
-            display: inline-block;
-            padding: $unit;
-            border: none;
-            color: lighten($accent-color, 20%);
-            border-radius: $unit*0.25;
-            
-        }
-        a:hover,
-        a:active {
-            background-color: rgba(0,0,0,0.15);
-        }
+        margin: 0;
     }
     
     & > * {
-        text-align: left;
-        max-width: $unit*45;
-        margin: $unit auto 0;
+        width: 100%;
+        max-width: $unit*50;
         box-sizing: border-box;
     }
     
-    @media screen and (max-width: 29.999rem) {
+    
+}
+
+@media screen and (min-width: 30rem) {
+    
+    body > header {
+        padding: 0;
+        
+        h1 {
+            padding: $unit $unit*2;
+        }
         
         nav {
-            background-color: $primary-color;
-            text-align: left;
-            padding: 0;
+            padding: 0 $unit;
             
             a,
             a:link,
             a:visited {
-                display: block;
-                border-top: solid 1px rgba(255,255,255,0.2);
-                border-radius: 0;
-                padding: $unit $unit*2;
+                display: inline-block;
+                padding: $unit;
             }
         }
-                
     }
     
-    @media screen and (min-width: 45rem) {
-        
+    header {
+        padding: 0 $unit*2;
+    }
+    
+}
+
+@media screen and (min-width: 50rem) {
+       
+    body > header {
         h1 {
-            padding: $unit*2 0 0;
+            padding: $unit 0;
         }
         
         nav {
-            padding: 0;
+            background-color: transparent;
+            box-shadow: none;
+            
+            a,
+            a:link,
+            a:visited {
+                color: $background-color;
+            }
+            
+            a:hover,
+            a:active {
+                background-color: darken($primary-color, 10%);
+            }
         }
-        
     }
+    
 }

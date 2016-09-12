@@ -2,31 +2,19 @@
 layout: default
 ---
 
-<div class="cols">
+<header>
+    <h1>Elements</h1>
+</header>
 
-    <div class="col1">
-        
-        <header>
-            <h1>Elements</h1>
-        </header>
-        
-        <nav class="subnav">
-            {% for element in site.elements %}
-            <a href="#{{ element.title }}">{{ element.title }}</a>
-            {% endfor %}
-        </nav>
-    
-    </div>
-    
-    <div class="col3">
-        
-        {% for element in site.elements %}
-        <article id="{{ element.title }}" class="article">
-            <h2>{{ element.title }}</h2>
-            {{ element.content }}
-        </article>
-        {% endfor %}
-    
-    </div>
+<nav class="subnav">
+    {% for element in site.elements %}
+    <a href="#{{ element.title }}">{{ element.title }}</a>
+    {% endfor %}
+</nav>
 
-</div>
+{% for element in site.elements %}
+<article id="{{ element.title }}" class="article">
+    <h2>{{ element.title }}</h2>
+    {{ element.content }}
+</article>
+{% endfor %}

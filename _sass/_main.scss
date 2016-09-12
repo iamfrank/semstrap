@@ -1,10 +1,21 @@
 main {
-    text-align: center;
+    background-color: $background-color;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
     
     & > * {
-        text-align: left;
-        max-width: $unit*45;
-        margin: $unit auto 0;
+        width: 100%;
+        max-width: $unit*50;
         box-sizing: border-box;
     }
+}
+
+@media screen and (min-width: 50rem) {
+    
+    main {
+        margin-top: $unit*2;
+    }
+    
 }

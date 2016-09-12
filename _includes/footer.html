@@ -1,13 +1,13 @@
 <footer>
 
-    <p>
-        {{ site.title }}
-    
-        {% if site.github_username %}
-            {% include icon-github.html username=site.github_username %}
-        {% endif %}
-    </p>
+    <p><strong>{{ site.title }}</strong></p>
     
     <p>{{ site.description }}</p>
+    
+    <p>
+        {% if site.github_username %}
+            created with &#9829; by {% include icon-github.html username=site.github_username %}
+        {% endif %}
+    </p>
 
 </footer>
