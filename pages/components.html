@@ -2,31 +2,20 @@
 layout: default
 ---
 
-<div class="cols">
+<header>
+    <h1>Components</h1>
+</header>
 
-    <div class="col1">
-        
-        <header>
-            <h1>Components</h1>
-        </header>
-        
-        <nav class="subnav">
-            {% for component in site.components %}
-            <a href="#{{ component.title }}">{{ component.title }}</a>
-            {% endfor %}
-        </nav>
-        
-    </div>
-    
-    <div class="col3">
-        
-        {% for component in site.components %}
-        <article id="{{ component.title }}">
-            <h2>{{ component.title }}</h2>
-            {{ component.content }}
-        </article>
-        {% endfor %}
+<nav>
+    <p>Table of contents:</p>
+    {% for component in site.components %}
+    <a href="#{{ component.title }}">{{ component.title }}</a>
+    {% endfor %}
+</nav>
 
-    </div>
-    
-</div>
+{% for component in site.components %}
+<article id="{{ component.title }}">
+    <h2>{{ component.title }}</h2>
+    {{ component.content }}
+</article>
+{% endfor %}

@@ -1,7 +1,7 @@
 section {
     margin: 0;
     padding: $unit;
-    background-color: lighten($background-color, 33%);
+    box-sizing: border-box;
 }
 
 @media screen and (min-width: 30rem) {

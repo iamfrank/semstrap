@@ -3,7 +3,7 @@ a:link,
 a:visited {
     color: $primary-color;
     text-decoration: none;
-    border-bottom: solid 1px $secondary-color;
+    border-bottom: solid 1px $primary-color;
 }
 a:hover,
 a:active {

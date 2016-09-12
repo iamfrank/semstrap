@@ -6,14 +6,15 @@ layout: default
     <h1>Elements</h1>
 </header>
 
-<nav class="subnav">
+<nav>
+    <p>Table of contents:</p>
     {% for element in site.elements %}
     <a href="#{{ element.title }}">{{ element.title }}</a>
     {% endfor %}
 </nav>
 
 {% for element in site.elements %}
-<article id="{{ element.title }}" class="article">
+<article id="{{ element.title }}">
     <h2>{{ element.title }}</h2>
     {{ element.content }}
 </article>

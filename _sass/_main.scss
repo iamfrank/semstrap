@@ -4,7 +4,6 @@ main {
     flex-flow: column;
     align-items: center;
     
-    
     & > * {
         width: 100%;
         max-width: $unit*50;
@@ -15,7 +14,7 @@ main {
 @media screen and (min-width: 50rem) {
     
     main {
-        margin-top: $unit*2;
+        margin-top: $unit*2;    
     }
     
 }

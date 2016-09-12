@@ -1,6 +1,6 @@
 fieldset {
     display: block;
-    background-color: darken($background-color, 10%);
+    background-color: $background-color;
     padding: $unit;
     border: none;
 }

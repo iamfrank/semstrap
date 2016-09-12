@@ -3,6 +3,7 @@ article {
     padding: $unit;
     background-color: lighten($background-color, 33%);
     border-top: solid 1px $background-color;
+    box-sizing: border-box;
 }
 
 @media screen and (min-width: 30rem) {
