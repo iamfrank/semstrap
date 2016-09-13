@@ -31,6 +31,10 @@
     margin: 0;
 }
 
+.codeview {
+    margin-top: 0;
+}
+
 .codeview .highlight {
     height: 1px;
     width: 1px;

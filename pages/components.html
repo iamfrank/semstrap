@@ -3,11 +3,10 @@ layout: default
 ---
 
 <header>
-    <h1>Components</h1>
+    <h1>Components</h1>    
 </header>
 
 <nav>
-    <p>Table of contents:</p>
     {% for component in site.components %}
     <a href="#{{ component.title }}">{{ component.title }}</a>
     {% endfor %}

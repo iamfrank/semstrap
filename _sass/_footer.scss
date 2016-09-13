@@ -1,6 +1,6 @@
 footer {
-    background-color: darken($background-color, 33%);
-    color: $background-color;
+    background-color: darken($background-color, 10%);
+    color: lighten($foreground-color, 33%);
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -10,11 +10,11 @@ footer {
     a,
     a:link,
     a:visited {
-        color: $foreground-color;
+        color: lighten($foreground-color, 20%);
     }
     a:hover,
     a:active {
-        color: lighten($accent-color, 50%);
+        
     }
     
 }

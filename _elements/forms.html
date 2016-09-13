@@ -6,8 +6,8 @@ title:  "Forms"
 
 <form>
     <fieldset>
-        <label for="myInputField">Input field</label>
-        <input id="myInputField" type="text" placeholder="Enter some text here ...">
+        <label for="myInputField">Text entry</label>
+        <input id="myInputField" type="text" placeholder="Enter some text">
         <input type="submit" value="Submit">
     </fieldset>
 </form>
@@ -18,8 +18,8 @@ title:  "Forms"
     {% highlight html %}
 <form>
     <fieldset>
-        <label for="myInputField">Input field</label>
-        <input id="myInputField" type="text" placeholder="Enter some text here ...">
+        <label for="myInputField">Text entry</label>
+        <input id="myInputField" type="text" placeholder="Enter some text">
         <input type="submit" value="Submit">
     </fieldset>
 </form>
@@ -48,6 +48,10 @@ title:  "Forms"
         <label for="myPhoneField">Phone</label>
         <input id="myPhoneField" type="phone" placeholder="Enter phone number">
     </fieldset>
+    <fieldset>
+        <label for="myPasswordField">Password</label>
+        <input id="myPasswordField" type="password" placeholder="Enter password">
+    </fieldset>
 </form>
 
 <div class="codeview">
@@ -70,6 +74,10 @@ title:  "Forms"
     <fieldset>
         <label for="myPhoneField">Phone</label>
         <input id="myPhoneField" type="phone" placeholder="Enter phone number">
+    </fieldset>
+    <fieldset>
+        <label for="myPasswordField">Password</label>
+        <input id="myPasswordField" type="password" placeholder="Enter password">
     </fieldset>
 </form>
     {% endhighlight %}
@@ -150,3 +158,113 @@ title:  "Forms"
 </form>
     {% endhighlight %}
 </div>
+
+<hr>
+
+<h3>Required input</h3>
+<p>Adding the <em>required</em> attribute to an input field will make will make it impossible to submit the form without entering a value.</p>
+
+<form>
+    <fieldset>
+        <label for="myInputField2">Required entry</label>
+        <input required id="myInputField2" type="text" placeholder="Enter some text">
+    </fieldset>
+    <fieldset>
+        <label for="myInputField3">Optional entry</label>
+        <input id="myInputField3" type="text" placeholder="Enter some text">
+    </fieldset>
+    <fieldset>
+        <input required type="checkbox" id="reqCheckBox">
+        <label for="reqCheckBox">Required checkbox</label>
+    </fieldset>
+    <fieldset>
+        
+        <input required type="radio" value="yes" name="radiogroup" id="reqRadio1">
+        <label for="reqRadio1">Required "yes"</label>
+    
+        <input required type="radio" value="no" name="radiogroup" id="reqRadio2">
+        <label for="reqRadio2">Required "No"</label>
+        
+    </fieldset>
+    <fieldset>
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+
+<div class="codeview">
+    <label class="codeview__label" for="formsRequired">Show HTML markup</label>
+    <input class="codeview__checkbox" type="checkbox" id="formsRequired">
+    {% highlight html %}
+<form>
+    <fieldset>
+        <label for="myInputField2">Required entry</label>
+        <input required id="myInputField2" type="text" placeholder="Enter some text">
+    </fieldset>
+    <fieldset>
+        <label for="myInputField3">Optional entry</label>
+        <input id="myInputField3" type="text" placeholder="Enter some text">
+    </fieldset>
+    <fieldset>
+        <input required type="checkbox" id="reqCheckBox">
+        <label for="reqCheckBox">Required checkbox</label>
+    </fieldset>
+    <fieldset>
+        
+        <input required type="radio" value="yes" name="radiogroup" id="reqRadio1">
+        <label for="reqRadio1">Required "yes"</label>
+    
+        <input required type="radio" value="no" name="radiogroup" id="reqRadio2">
+        <label for="reqRadio2">Required "No"</label>
+        
+    </fieldset>
+    <fieldset>
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+    {% endhighlight %}
+</div>
+
+<hr>
+
+<h3>Validating required inputs</h3>
+<p>
+    Browsers will automatically do some basic validation based on the input type.
+    Below are som examples of input fields that do basic validation and visually indicate failure/success.
+    The latter example uses the <em>pattern</em> attribute to validate using a regex pattern.
+</p>
+
+<form>
+    <fieldset>
+        <label for="validEmailInput">Validating email:</label>
+        <input required id="validEmailInput" type="email" placeholder="Enter a valid email address">
+    </fieldset>
+    <fieldset>
+        <label for="validEmailInput">Validating URL using regex:</label>
+        <input required id="validEmailInput" type="url" pattern="https?://.+" placeholder="Anything that starts with 'http'">
+    </fieldset>
+    <fieldset>
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+
+<div class="codeview">
+    <label class="codeview__label" for="formsValidate">Show HTML markup</label>
+    <input class="codeview__checkbox" type="checkbox" id="formsValidate">
+    {% highlight html %}
+<form>
+    <fieldset>
+        <label for="validEmailInput">Validating email:</label>
+        <input required id="validEmailInput" type="email" placeholder="Enter a valid email address">
+    </fieldset>
+    <fieldset>
+        <label for="validEmailInput">Validating URL using regex:</label>
+        <input required id="validEmailInput" type="url" pattern="https?://.+" placeholder="Anything that starts with 'http'">
+    </fieldset>
+    <fieldset>
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+    {% endhighlight %}
+</div>
+
+

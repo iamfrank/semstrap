@@ -16,3 +16,21 @@ select {
     border: solid $unit*0.1 darken($background-color, 20%);
     padding: $unit*0.25 $unit*0.5;
 }
+
+input:required,
+textarea:required,
+select:required {
+    border-left: solid $unit*0.25 $accent-color;
+}
+
+input:focus:invalid,
+textarea:focus:invalid,
+select:focus:invalid {
+    border-left: solid $unit*0.25 red;
+}
+
+input:required:valid,
+textarea:required:valid,
+select:required:valid {
+    border-left: solid $unit*0.25 green;
+}
