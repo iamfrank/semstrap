@@ -1,19 +1,14 @@
 article {
     margin: 0;
     padding: $unit;
-    background-color: lighten($background-color, 33%);
     border-top: solid 1px $background-color;
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 30rem) {
+@media screen and (min-width: $break-small-medium) {
     
     article {
-        padding: $unit $unit*2;
+        padding: $unit*2;
     }
-       
-}
-
-@media screen and (min-width: 50rem) {
     
 }

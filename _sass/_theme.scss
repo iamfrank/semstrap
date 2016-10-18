@@ -2,17 +2,22 @@
  * SASS theme variables
  */
 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+$base-font: 'Roboto', sans-serif;
+
 /* Colors */
-$primary-color: #04B431;
+$primary-color: rgb(25, 75, 125);
 $secondary-color: complement($primary-color);
 $accent-color: invert($primary-color);
-
-$background-color: #eee;
+$background-color: #fff;
 $foreground-color: #333;
-
 
 /* Units */
 $unit: 1rem;
 
-/* Fonts */
-$base-font: 'Open Sans', sans-serif;
+/* Breakpoints */
+$break-xsmall-small: $unit*30;
+$break-small-medium: $unit*40;
+$break-medium-large: $unit*50;
+$break-large-xlarge: $unit*70;

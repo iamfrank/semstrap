@@ -1,89 +1,35 @@
 header {
-    padding: 0 $unit;
+    background-color: darken($primary-color, 10%);
+    padding: 0;
+    margin: 0;
+    height: $unit*4;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    color: $background-color;
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: $unit*2;
+        padding: 0 $unit;
+        @extend .truncate;
+    }
 }
 
 body > header {
     background-color: $primary-color;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    color: $background-color;
-    box-shadow: 0 $unit*0.3 $unit*0.3 darken($background-color, 30%);
-    
-    h1 {
-        padding: $unit;
-    }
-    
-    nav {
-        margin: 0;
-    }
-    
-    & > * {
-        width: 100%;
-        max-width: $unit*50;
-        box-sizing: border-box;
-    }
-    
-    
 }
 
-@media screen and (min-width: 30rem) {
-    
-    body > header {
-        padding: 0;
-        
-        h1 {
-            padding: $unit $unit*2;
-        }
-        
-        nav {
-            padding: 0 $unit;
-            
-            a,
-            a:link,
-            a:visited {
-                display: inline-block;
-                padding: $unit;
-                border: none;
-            }
-        }
-    }
-    
-    header {
-        padding: 0 $unit*2;
-    }
-    
-}
 
-@media screen and (min-width: 50rem) {
-       
-    header {
-        padding: 0;
-    }
-       
-    body > header {
-        
-        h1 {
-            padding: $unit 0;
-        }
-        
-        nav {
-            background-color: transparent;
-            box-shadow: none;
-            
-            a,
-            a:link,
-            a:visited {
-                color: $background-color;
-            }
-            
-            a:hover,
-            a:active {
-                background-color: darken($primary-color, 10%);
-            }
-        }
+@media screen and (min-width: $break-small-medium) {
+    
+    header  {
+        padding: 0 $unit;
     }
     
 }

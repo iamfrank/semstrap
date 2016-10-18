@@ -1,7 +1,6 @@
 nav {
     margin: 0;
     padding: 0;
-    background-color: $background-color;
 
     a,
     a:link,
@@ -10,37 +9,41 @@ nav {
         border-top: solid 1px rgba($foreground-color, 0.12);
         display: block;
         padding: $unit;
-        
         margin: 0;
     }
     a:hover,
     a:active {
-        background-color: $accent-color;
+        background-color: rgba($foreground-color, 0.25);
+    }
+}
+
+header nav {
+    background-color: $primary-color;
+    
+    a,
+    a:link,
+    a:visited {
+        display: inline-block;
+        padding: $unit;
         color: $background-color;
+        margin: 0;
+        border: none;
+    }
+    a:hover,
+    a:active {
+        background-color: rgba($foreground-color, 0.25);
     }
 }
 
-@media screen and (min-width: 30rem) {
+
+@media screen and (min-width: $break-small-medium) {
     
     nav {
-        a,
-        a:link,
-        a:visited {
-            padding: $unit*0.5 $unit*2;
-        }
-    }
-
-}
-
-@media screen and (min-width: 50rem) {
-    
-    nav {
-        margin: $unit 0 $unit*2;
         
         a,
         a:link,
         a:visited {
-            
+            padding: $unit $unit*2;
         }
     }
     

@@ -14,15 +14,16 @@
 @import 'thematic-break';
 
 // HTML semantic layout
-@import 'header';
 @import 'main';
+@import 'header';
+@import 'footer';
 @import 'nav';
 @import 'article';
 @import 'section';
-@import 'footer';
 
 // Javascript widgets
 @import 'infinite-scroll';
+@import 'grid';
 
 // Style tile styles
 // These are for the style tile only. You can ignore these for a production environment

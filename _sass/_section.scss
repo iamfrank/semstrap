@@ -4,14 +4,10 @@ section {
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 30rem) {
+@media screen and (min-width: $break-small-medium) {
     
     section {
-        padding: $unit $unit*2;
+        padding: $unit*2;
     }
-       
-}
-
-@media screen and (min-width: 50rem) {
     
 }

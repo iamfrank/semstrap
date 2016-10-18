@@ -1,9 +1,6 @@
 footer {
     background-color: darken($background-color, 10%);
     color: lighten($foreground-color, 33%);
-    display: flex;
-    flex-flow: column;
-    align-items: center;
     margin: 0;
     padding: $unit;
     
@@ -19,25 +16,11 @@ footer {
     
 }
 
-footer > * {
-    width: 100%;
-    max-width: $unit*50;
-    box-sizing: border-box;
-    margin: 0 0 $unit;
-}
 
-@media screen and (min-width: 30rem) {
+@media screen and (min-width: $break-small-medium) {
     
     footer {
         padding: $unit*2;
     }
        
-}
-
-@media screen and (min-width: 50rem) {
-    
-    footer {
-        margin-top: $unit*2;
-    }
-    
 }

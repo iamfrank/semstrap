@@ -74,7 +74,14 @@ blockquote {
     color: rgba($foreground-color, 0.54);
 }
 
-@media (min-width: 43.75em) {
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+@media (min-width: $break-small-medium) {
     
     body {
         font-size: $unit;
@@ -107,7 +114,7 @@ blockquote {
     
 }
 
-@media (min-width: 56.25em) {
+@media (min-width: $break-medium-large) {
   
     h1 {
         font-size: $unit*3;

@@ -1,56 +1,82 @@
 ---
-layout: default
+layout: compress
 ---
 
-<article>
-
-    <p>
-        Semstrap (or "semantic bootstrap") is a collection of CSS styles that add a modern look and feel to web projects.
-    </p>
-    <p>
-        It aims to have the convenience of frameworks like Bootstrap but using only semantic HTML for styling and vanilla Javascript for interactive widgets.
-    </p>
-    <p>
-        Many developers turn to frontend frameworks just to easily improve the looks of their web projects. Unfortunately this approach results in a loot of framework-specific code like class names and wrapping elements being added to your HTML. Sometimes you even end up adding a bit of code from a another web project that relies on a different front end framework and you get a mess of dependencies and conflicting class names.
-    </p>
-    <p>
-        Semstrap styles only targets elements. When you want to use it to style a form element you just add the element like so:
-    </p>
+<!DOCTYPE html>
+<html>
     
-    {% highlight html %}
+    {% include head.html %}
+
+    <body class="splash-page">
+        
+        {% include header.html %}
+        
+        <main>
+            
+            <section class="hero">
+                <h1>
+                    <img src="{{ '/images/logo.svg' | prepend: site.baseurl }}" alt="">
+                    <span>{{ site.title }}</span>
+                </h1>
+                <p class="byline">
+                    Semstrap is a framework for web projects that has the convenience of frameworks like Bootstrap but uses only semantic HTML and vanilla Javascript.
+                </p>
+                <a class="more-arrow" href="#about" title="more">&#10132;</a>
+                
+            </section>
+        
+            <article id="about">
+                
+                <p>
+                    Many developers turn to frontend frameworks just to easily improve the looks of their web projects. Unfortunately this approach results in a loot of framework-specific code like class names and wrapping elements being added to your HTML. Sometimes you even end up adding a bit of code from a another web project that relies on a different front end framework and you get a mess of dependencies and conflicting class names.
+                </p>
+                <p>
+                    Semstrap styles only targets elements. When you want to use it to style a form element you just add the element like so:
+                </p>
+                
+                {% highlight html %}
 <form>
     <label for="inputEmail">Email address</label>
     <input id="inputEmail" type="email">
 </form>
-    {% endhighlight %}
-    
-    <p>
-        ... as opposed to:
-    </p>
-    
-    {% highlight html %}
+                {% endhighlight %}
+                
+                <p>
+                    ... as opposed to:
+                </p>
+                
+                {% highlight html %}
 <form class="form form-modifier">
-  <div class="form__wrapper form__wrapper-modifier">
-    <label class="form__wrapper__label" for="exampleInputEmail1">Email address</label>
-    <input class="form__wrapper__input form__wrapper__input-modifier" type="email" class="form-control">
-  </div>
+    <div class="form__wrapper form__wrapper-modifier">
+        <label class="form__wrapper__label" for="exampleInputEmail1">Email address</label>
+        <input class="form__wrapper__input form__wrapper__input-modifier" type="email" class="form-control">
+    </div>
 </form>
-    {% endhighlight %}
-    
-    <p>Check it out on Github: <a href="https://github.com/iamfrank/semstrap">https://github.com/iamfrank/semstrap</a></p>
-    
-    <h3>Using it</h3>
-    <p>
-        If you want to use Semstrap in your project, just download semstrap.css from here and add it to your HTML files along with a link to the Open Sans font from Google Web Fonts:
-    </p>
-    
-    {% highlight html %}
-<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Lato:400,700'>
+                {% endhighlight %}
+                
+                <p>Check it out on Github: <a href="https://github.com/iamfrank/semstrap">https://github.com/iamfrank/semstrap</a></p>
+                
+                <h3>Using it</h3>
+                <p>
+                    If you want to use Semstrap in your project, just download semstrap.css from here and add it to your HTML files:
+                </p>
+                
+                {% highlight html %}        
 <link rel='stylesheet' type='text/css' href='semstrap.css'>
-    {% endhighlight %}
-    
-    <p>
-        That's it. Take a look at <a href="{{ '/pages/elements.html' | prepend: site.baseurl }}">the docs</a> to see the cool stuff you can build with pure HTML elements and Semstrap.
-    </p>
+                {% endhighlight %}
+                
+                <p>
+                    That's it. Take a look at <a href="{{ '/pages/elements.html' | prepend: site.baseurl }}">the docs</a> to see the cool stuff you can build with pure HTML elements and Semstrap.
+                </p>
+            
+            </article>
 
-</article>
+        </main>
+        
+        {% include footer.html %}
+        
+        <script src="{{ '/javascript/semstrap.js' | prepend: site.baseurl }}"></script>
+    
+    </body>
+
+</html>

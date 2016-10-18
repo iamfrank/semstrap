@@ -5,14 +5,14 @@
         <span>{{ site.title }}</span>
     </h1>
     
-    <label class="menu__label" for="menu-input">Menu</label>
+    <label class="menu__label" for="menu-input" title="Toggle navigation">&#9776;</label>
     <input class="menu__checkbox" type="checkbox" id="menu-input">
     
-    <nav class="menu__nav">
-        <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
-        <a href="{{ '/pages/elements.html' | prepend: site.baseurl }}">Elements</a>
-        <a href="{{ '/pages/components.html' | prepend: site.baseurl }}">Components</a>
-        <a href="{{ '/pages/style-tile.html' | prepend: site.baseurl }}">Style tile</a>
+    <nav class="menu__nav" role="menubar">
+        <a role="menuitem" href="{{ '/' | prepend: site.baseurl }}">Home</a>
+        <a role="menuitem" href="{{ '/pages/elements.html' | prepend: site.baseurl }}">Elements</a>
+        <a role="menuitem" href="{{ '/pages/components.html' | prepend: site.baseurl }}">Components</a>
+        <a role="menuitem" href="{{ '/pages/style-tile.html' | prepend: site.baseurl }}">Style tile</a>
     </nav>
     
 </header>

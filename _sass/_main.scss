@@ -2,19 +2,7 @@ main {
     background-color: $background-color;
     display: flex;
     flex-flow: column;
-    align-items: center;
-    
-    & > * {
-        width: 100%;
-        max-width: $unit*50;
-        box-sizing: border-box;
-    }
-}
-
-@media screen and (min-width: 50rem) {
-    
-    main {
-        margin-top: $unit*2;    
-    }
-    
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
 }

@@ -6,7 +6,7 @@ layout: default
     <h1>Components</h1>    
 </header>
 
-<nav>
+<nav class="grid nav-grid">
     {% for component in site.components %}
     <a href="#{{ component.title }}">{{ component.title }}</a>
     {% endfor %}

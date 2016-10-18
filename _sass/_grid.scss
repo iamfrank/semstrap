@@ -1,0 +1,22 @@
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 -($unit);
+}
+
+.grid > * {
+    flex: 1 0 $unit*15;
+    box-sizing: border-box;
+    margin: 0 $unit $unit;
+}
+
+
+@media screen and (min-width: $break-small-medium) {
+    
+    .grid > * {
+        margin: $unit;
+    }
+    
+}
