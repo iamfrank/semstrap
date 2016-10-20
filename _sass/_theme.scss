@@ -3,18 +3,19 @@
  */
 
 /* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700');
 $base-font: 'Roboto', sans-serif;
 
 /* Colors */
-$primary-color: rgb(25, 75, 125);
-$secondary-color: complement($primary-color);
-$accent-color: invert($primary-color);
+$primary-color: #205F7F;
+$secondary-color: #A0A5A8;
+$accent-color: #E0182B;
 $background-color: #fff;
 $foreground-color: #333;
 
 /* Units */
 $unit: 1rem;
+$grid-unit: $unit*10;
 
 /* Breakpoints */
 $break-xsmall-small: $unit*30;

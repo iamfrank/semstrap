@@ -1,5 +1,5 @@
 header {
-    background-color: darken($primary-color, 10%);
+    background-color: darken($secondary-color, 10%);
     padding: 0;
     margin: 0;
     height: $unit*4;
@@ -22,7 +22,7 @@ header {
 }
 
 body > header {
-    background-color: $primary-color;
+    background-color: $secondary-color;
 }
 
 

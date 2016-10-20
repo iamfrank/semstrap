@@ -30,7 +30,8 @@
 /* Intra-page navigation */
 
 .nav-grid {
-    padding: $unit;
+    border-top: solid 1px $background-color;
+    border-bottom: solid 1px $background-color;
 }
 
 .nav-grid {
@@ -42,8 +43,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        border: dashed 1px darken($background-color, 20%);
-        border-width: 1px 0 0 1px;
+        border: solid 1px $background-color;
     }
     
 }
@@ -57,6 +57,7 @@
 
 .codeview {
     margin-top: 0;
+    text-align: right;
 }
 
 .codeview .highlight {
@@ -64,20 +65,24 @@
     width: 1px;
     overflow: hidden;
     padding: 0;
-    background: #eee;
     display: block;
 }
 
 .highlight code {
-    background-color: #ddd;
     padding-bottom: 0;
+    text-align: left;
 }
 
 .codeview__label {
     display: block;
-    color: #4378D1;
+    color: $primary-color;
     padding: $unit*0.5 0;
     cursor: pointer;
+}
+
+.codeview__label:hover,
+.codeview__label:active {
+    color: darken($primary-color, 20%);
 }
 
 .codeview__checkbox {
@@ -161,9 +166,13 @@
 // Show some colors for grid
 .grid > * {
     background-color: darken($background-color, 10%);
-    padding: $unit;
+    border: solid 1px $background-color;
 }
 
+// Tell articles apart
+article {
+    border-top: solid $unit*0.5 darken($background-color, 10%);
+}
 
 /* Media queries*/
 

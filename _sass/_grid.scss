@@ -3,20 +3,12 @@
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 0 -($unit);
+    margin: 0;
 }
 
 .grid > * {
-    flex: 1 0 $unit*15;
+    flex: 1 0 $grid-unit;
     box-sizing: border-box;
-    margin: 0 $unit $unit;
-}
-
-
-@media screen and (min-width: $break-small-medium) {
-    
-    .grid > * {
-        margin: $unit;
-    }
-    
+    margin: 0;
+    padding: $unit;
 }

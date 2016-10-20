@@ -3,17 +3,6 @@ footer {
     color: lighten($foreground-color, 33%);
     margin: 0;
     padding: $unit;
-    
-    a,
-    a:link,
-    a:visited {
-        color: lighten($foreground-color, 20%);
-    }
-    a:hover,
-    a:active {
-        
-    }
-    
 }
 
 

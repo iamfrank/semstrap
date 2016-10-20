@@ -13,25 +13,28 @@ nav {
     }
     a:hover,
     a:active {
-        background-color: rgba($foreground-color, 0.25);
+        background-color: rgba($primary-color, 0.2);
     }
 }
 
 header nav {
-    background-color: $primary-color;
     
     a,
     a:link,
     a:visited {
         display: inline-block;
-        padding: $unit;
+        padding: $unit*0.75 $unit;
         color: $background-color;
         margin: 0;
         border: none;
+        box-sizing: border-box;
+        border-top: solid $unit*0.5 transparent;
+        border-bottom: solid $unit*0.5 transparent;
     }
     a:hover,
     a:active {
-        background-color: rgba($foreground-color, 0.25);
+        border-bottom: solid $unit*0.5 $primary-color;
+        background-color: transparent;
     }
 }
 

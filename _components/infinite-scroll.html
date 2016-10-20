@@ -30,28 +30,28 @@ collection: components
 </div>
 
 <div class="codeview">
-    <label class="codeview__label" for="insc">Show HTML</label>
+    <label class="codeview__label" for="insc">Toggle code</label>
     <input class="codeview__checkbox" type="checkbox" id="insc">
     {% highlight html %}
-    <div class="infinity-scroll">
-        
-        <div class="infinity-scroll__templates">
-          <li class="infinity-scroll__item" data-id="{{id}}">
-            <div class="infinity-scroll__content">
-                Load your dynamic content here
-            </div>
-          </li>
-          <li class="infinity-scroll__item infinity-scroll__tombstone" data-id="{{id}}">
-            <div class="infinity-scroll__content">
-                Loading &hellip;
-            </div>
-          </li>
-        </div>
-        
-        <ul class="infinity-scroll__list">
-        </ul>
+<div class="infinity-scroll">
     
+    <div class="infinity-scroll__templates">
+      <li class="infinity-scroll__item" data-id="{{id}}">
+        <div class="infinity-scroll__content">
+            Load your dynamic content here
+        </div>
+      </li>
+      <li class="infinity-scroll__item infinity-scroll__tombstone" data-id="{{id}}">
+        <div class="infinity-scroll__content">
+            Loading &hellip;
+        </div>
+      </li>
     </div>
+    
+    <ul class="infinity-scroll__list">
+    </ul>
+
+</div>
     {% endhighlight %}
 </div>
 

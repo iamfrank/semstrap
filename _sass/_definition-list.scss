@@ -1,0 +1,37 @@
+dl {
+    margin: 0;
+    padding: 0;
+    
+    dt {
+        margin: 0;
+        padding: $unit*0.75 0 $unit*0.25;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        color: rgba($foreground-color, 0.75);
+    }
+    dd {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+@media screen and (min-width: $break-small-medium) {
+    
+    dl {
+        
+        dt {
+            padding: 0 $unit 0 0;
+            float: left;
+            clear: left;
+            width: $grid-unit;
+            box-sizing: border-box;
+        }
+        dd {
+            clear: right;
+            padding: 0 0 $unit*2 $grid-unit;
+            box-sizing: border-box;
+        }
+    }
+    
+}
