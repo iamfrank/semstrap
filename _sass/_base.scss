@@ -5,6 +5,10 @@
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
@@ -15,7 +19,6 @@ body {
     background-color: $background-color;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 body * + * {
@@ -341,14 +344,12 @@ fieldset {
 }
 
 /**
- * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
 
 legend {
-  box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
   display: table; /* 1 */
   max-width: 100%; /* 1 */
@@ -365,13 +366,11 @@ textarea {
 }
 
 /**
- * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
  */
 
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 

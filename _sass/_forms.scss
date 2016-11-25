@@ -1,6 +1,6 @@
 fieldset {
     display: block;
-    background-color: $background-color;
+    background-color: darken($background-color, 10%);
     padding: $unit;
     border: none;
 }
@@ -13,24 +13,89 @@ label {
 input,
 textarea,
 select {
-    border: solid $unit*0.1 darken($background-color, 20%);
+    display: inline-block;
+    border: solid 1px darken($background-color, 20%);
     padding: $unit*0.25 $unit*0.5;
+    background-color: $background-color;
+    color: $foreground-color;
+    
+    &:focus {
+        outline: none;
+        box-shadow: 0 $unit*0.25 $unit*0.25 rgba($foreground-color, 0.25); 
+    }
 }
 
 input:required,
 textarea:required,
 select:required {
-    border-left: solid $unit*0.25 $accent-color;
+    border-width: 1px 1px 1px $unit*0.5;
+    border-left-color: $alert-color;
 }
 
 input:focus:invalid,
 textarea:focus:invalid,
 select:focus:invalid {
-    border-left: solid $unit*0.25 red;
+    border-left-color: $alert-color;
 }
 
 input:required:valid,
 textarea:required:valid,
 select:required:valid {
-    border-left: solid $unit*0.25 green;
+    border-left-color: $success-color;
+}
+
+
+// Styles for radio and checkbox input
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+    
+    & + label {
+        vertical-align: middle;
+        display: block;
+    }
+    & + label::before {
+        content: ' ';
+        display: inline-block;
+        width: $unit;
+        height: $unit;
+        background-color: $background-color;
+        margin-right: $unit*0.25;
+        padding: $unit*0.25;
+        line-height: 1;
+        vertical-align: middle;
+        text-align: center;
+    }
+    &:required + label::after {
+        content: '*';
+        color: $alert-color;
+        font-weight: bold;
+        padding: 0 $unit*0.25;
+    }
+    &:required:valid + label::after {
+        color: $success-color;
+    }
+    &:focus + label {
+        box-shadow: 0 $unit*0.25 $unit*0.25 rgba($foreground-color, 0.25); 
+    }
+    &:checked + label::before {
+        content: '✔';
+        color: $background-color;
+        background-color: $primary-color;
+    }
+}
+
+input[type="radio"]{
+    
+    & + label::before {
+        padding: 0;
+        border-radius: 50%;
+        background-color: darken($background-color, 10%);
+        border: solid $unit*0.25 $background-color;
+    }
+    &:checked + label::before {
+        content: '';
+        background-color: $primary-color;
+    }
 }

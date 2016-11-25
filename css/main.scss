@@ -29,23 +29,20 @@
 
 /* Intra-page navigation */
 
-.nav-grid {
+.subnav {
     border-top: solid 1px $background-color;
     border-bottom: solid 1px $background-color;
-}
-
-.nav-grid {
+    columns: $unit*10;
     
     & > a,
     & > a:link,
     & > a:visited {
-        flex: 1 0 $unit*10;
+        display: block;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
         border: solid 1px $background-color;
     }
-    
 }
 
 

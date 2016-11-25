@@ -6,8 +6,19 @@ title:  "Forms"
 
 <form>
     <fieldset>
-        <label for="myInputField">Text entry</label>
-        <input id="myInputField" type="text" placeholder="Enter some text">
+        <label for="myInputField1">Text entry</label>
+        <input id="myInputField1" type="text" placeholder="Enter some text" required>
+    </fieldset>
+    <fieldset>
+        <label for="myInputField2">Optional text</label>
+        <input id="myInputField2" type="text" placeholder="">
+    </fieldset>
+    <fieldset>
+        <input id="myInputField3" type="checkbox">
+        <label for="myInputField3">Tick this box</label>
+    </fieldset>
+    <fieldset>
+        <button>Cancel</button>
         <input type="submit" value="Submit">
     </fieldset>
 </form>
@@ -18,8 +29,19 @@ title:  "Forms"
     {% highlight html %}
 <form>
     <fieldset>
-        <label for="myInputField">Text entry</label>
-        <input id="myInputField" type="text" placeholder="Enter some text">
+        <label for="myInputField1">Text entry</label>
+        <input id="myInputField1" type="text" placeholder="Enter some text" required>
+    </fieldset>
+    <fieldset>
+        <label for="myInputField2">Optional text</label>
+        <input id="myInputField2" type="text" placeholder="">
+    </fieldset>
+    <fieldset>
+        <input id="myInputField3" type="checkbox">
+        <label for="myInputField3">Tick this box</label>
+    </fieldset>
+    <fieldset>
+        <button>Cancel</button>
         <input type="submit" value="Submit">
     </fieldset>
 </form>
@@ -52,6 +74,10 @@ title:  "Forms"
         <label for="myPasswordField">Password</label>
         <input id="myPasswordField" type="password" placeholder="Enter password">
     </fieldset>
+    <fieldset>
+        <label for="myFileField">File</label>
+        <input id="myFileField" type="file">
+    </fieldset>
 </form>
 
 <div class="codeview">
@@ -59,7 +85,7 @@ title:  "Forms"
     <input class="codeview__checkbox" type="checkbox" id="specfield">
     {% highlight html %}
 <form>
-    <fieldset>    
+     <fieldset>    
         <label for="mySearchField">Search</label>
         <input id="mySearchField" type="search" placeholder="Enter search">
     </fieldset>
@@ -79,6 +105,10 @@ title:  "Forms"
         <label for="myPasswordField">Password</label>
         <input id="myPasswordField" type="password" placeholder="Enter password">
     </fieldset>
+    <fieldset>
+        <label for="myFileField">File</label>
+        <input id="myFileField" type="file">
+    </fieldset>
 </form>
     {% endhighlight %}
 </div>
@@ -88,15 +118,11 @@ title:  "Forms"
 <h3>Checkbox</h3>
 
 <form>
-    <fieldset>    
-        <label for="myCheckboxA">
-            <input id="myCheckboxA" type="checkbox" checked>
-            Checkbox A
-        </label>
-        <label for="myCheckboxB">
-            <input id="myCheckboxB" type="checkbox">
-            Checkbox B
-        </label>
+    <fieldset>
+        <input id="myCheckboxA" type="checkbox" checked>
+        <label for="myCheckboxA">Checkbox A</label>
+        <input id="myCheckboxB" type="checkbox">
+        <label for="myCheckboxB">Checkbox B</label>
     </fieldset>
 </form>
 
@@ -105,11 +131,14 @@ title:  "Forms"
     <input class="codeview__checkbox" type="checkbox" id="checkbox">
     {% highlight html %}
 <form>
-    <fieldset>    
-        <label for="myCheckboxA">Checkbox A</label>
+    <fieldset>
+        
         <input id="myCheckboxA" type="checkbox" checked>
-        <label for="myCheckboxB">Checkbox B</label>
+        <label for="myCheckboxA">Checkbox A</label>
+        
         <input id="myCheckboxB" type="checkbox">
+        <label for="myCheckboxB">Checkbox B</label>
+        
     </fieldset>
 </form>
     {% endhighlight %}
@@ -121,18 +150,16 @@ title:  "Forms"
 
 <form>
     <fieldset>    
-        <label for="myRadioA">
-            <input id="myRadioA" type="radio" name="radioButtonSet" checked>
-            Radio button A
-        </label>
-        <label for="myRadioB">
-            <input id="myRadioB" type="radio" name="radioButtonSet">
-            Radio button B
-        </label>
-        <label for="myRadioC">
-            <input id="myRadioC" type="radio" name="radioButtonSet">
-            Radio button C
-        </label>
+        
+        <input id="myRadioA" type="radio" name="radioButtonSet" checked>
+        <label for="myRadioA">Radio button A</label>
+        
+        <input id="myRadioB" type="radio" name="radioButtonSet">
+        <label for="myRadioB">Radio button B</label>
+            
+        <input id="myRadioC" type="radio" name="radioButtonSet">
+        <label for="myRadioC">Radio button C</label>
+        
     </fieldset>
 </form>
 
@@ -142,18 +169,16 @@ title:  "Forms"
     {% highlight html %}
 <form>
     <fieldset>    
-        <label for="myRadioA">
-            <input id="myRadioA" type="radio" name="radioButtonSet" checked>
-            Radio button A
-        </label>
-        <label for="myRadioB">
-            <input id="myRadioB" type="radio" name="radioButtonSet">
-            Radio button B
-        </label>
-        <label for="myRadioC">
-            <input id="myRadioC" type="radio" name="radioButtonSet">
-            Radio button C
-        </label>
+        
+        <input id="myRadioA" type="radio" name="radioButtonSet" checked>
+        <label for="myRadioA">Radio button A</label>
+        
+        <input id="myRadioB" type="radio" name="radioButtonSet">
+        <label for="myRadioB">Radio button B</label>
+            
+        <input id="myRadioC" type="radio" name="radioButtonSet">
+        <label for="myRadioC">Radio button C</label>
+        
     </fieldset>
 </form>
     {% endhighlight %}
@@ -166,25 +191,30 @@ title:  "Forms"
 
 <form>
     <fieldset>
-        <label for="myInputField2">Required entry</label>
+        <label for="myInputField2">Text field</label>
         <input required id="myInputField2" type="text" placeholder="Enter some text">
     </fieldset>
     <fieldset>
-        <label for="myInputField3">Optional entry</label>
-        <input id="myInputField3" type="text" placeholder="Enter some text">
+        <label for="reqSelect">Select field</label>
+        <select id="reqSelect" required placeholder="Pick one">
+            <option value="one">One</option>
+            <option value="two">Two</option>
+            <option disabled>Disabled option</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <label for="reqTextarea">Textarea field</label>
+        <textarea id="reqTextarea" required></textarea>
     </fieldset>
     <fieldset>
         <input required type="checkbox" id="reqCheckBox">
-        <label for="reqCheckBox">Required checkbox</label>
+        <label for="reqCheckBox">Checkbox</label>
     </fieldset>
     <fieldset>
-        
         <input required type="radio" value="yes" name="radiogroup" id="reqRadio1">
         <label for="reqRadio1">Required "yes"</label>
-    
         <input required type="radio" value="no" name="radiogroup" id="reqRadio2">
         <label for="reqRadio2">Required "No"</label>
-        
     </fieldset>
     <fieldset>
         <input type="submit" value="Submit">
@@ -197,25 +227,30 @@ title:  "Forms"
     {% highlight html %}
 <form>
     <fieldset>
-        <label for="myInputField2">Required entry</label>
+        <label for="myInputField2">Text field</label>
         <input required id="myInputField2" type="text" placeholder="Enter some text">
     </fieldset>
     <fieldset>
-        <label for="myInputField3">Optional entry</label>
-        <input id="myInputField3" type="text" placeholder="Enter some text">
+        <label for="reqSelect">Select field</label>
+        <select id="reqSelect" required placeholder="Pick one">
+            <option value="one">One</option>
+            <option value="two">Two</option>
+            <option disabled>Disabled option</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <label for="reqTextarea">Textarea field</label>
+        <textarea id="reqTextarea" required></textarea>
     </fieldset>
     <fieldset>
         <input required type="checkbox" id="reqCheckBox">
-        <label for="reqCheckBox">Required checkbox</label>
+        <label for="reqCheckBox">Checkbox</label>
     </fieldset>
     <fieldset>
-        
         <input required type="radio" value="yes" name="radiogroup" id="reqRadio1">
         <label for="reqRadio1">Required "yes"</label>
-    
         <input required type="radio" value="no" name="radiogroup" id="reqRadio2">
         <label for="reqRadio2">Required "No"</label>
-        
     </fieldset>
     <fieldset>
         <input type="submit" value="Submit">
