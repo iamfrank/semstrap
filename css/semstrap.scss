@@ -6,7 +6,7 @@
 @import 'base';
 @import 'typography';
 
-// HTML elements
+// Elements (pure HTML)
 @import 'buttons';
 @import 'code';
 @import 'definition-list';
@@ -22,9 +22,10 @@
 @import 'article';
 @import 'section';
 
-// Javascript widgets
+// Components (using classes and javascript)
 @import 'infinite-scroll';
 @import 'grid';
+@import 'accordion';
 
 // Style tile styles
 // These are for the style tile only. You can ignore these for a production environment

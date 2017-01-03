@@ -9,7 +9,7 @@
 title: Semstrap
 email: frank@magenta.dk
 description: > # this means to ignore newlines until "baseurl:"
-  Semstrap ("semantic bootstrap") is a layer of CSS that improves the look and feel of standard HTML elements.
+    Semstrap ("semantic bootstrap") is a layer of CSS that improves the look and feel of standard HTML elements.
 baseurl: "/semstrap"
 url: "http://iamfrank.github.io/"
 github_username:  iamfrank
@@ -26,8 +26,10 @@ markdown: kramdown
 
 # Collections
 collections:
-- elements
-- components
+    elements:
+        output: true
+    components:
+        output: true
 
 # SASS config
 sass:

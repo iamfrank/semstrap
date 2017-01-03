@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 name: buttons
 title:  "Buttons"
 ---
@@ -7,14 +7,10 @@ title:  "Buttons"
 <button onclick="alert('It was touched');">Touch me</button>
 <button disabled>Disabled</button>
 
-<div class="codeview">
-    <label class="codeview__label" for="btns">Toggle code</label>
-    <input class="codeview__checkbox" type="checkbox" id="btns">
-    {% highlight html %}
+{% highlight html %}
 <button>Touch me</button>
 <button disabled>Disabled</button>
-    {% endhighlight %}
-</div>
+{% endhighlight %}
 
 <hr>
 
@@ -28,10 +24,7 @@ title:  "Buttons"
     <input type="submit" value="Nothing" disabled>
 </form>
 
-<div class="codeview">
-    <label class="codeview__label" for="formbtns">Toggle code</label>
-    <input class="codeview__checkbox" type="checkbox" id="formbtns">
-    {% highlight html %}
+{% highlight html %}
 <form>
     <input type="submit" value="Submit">
     <button type="button">With button element</button>
@@ -39,5 +32,4 @@ title:  "Buttons"
     <input type="reset" value="Reset">
     <input type="submit" value="Nothing" disabled>
 </form>
-    {% endhighlight %}
-</div>
+{% endhighlight %}

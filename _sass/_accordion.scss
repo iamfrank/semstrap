@@ -1,0 +1,35 @@
+.accordion {
+    
+}
+
+.accordion *[role="heading"] {
+    padding: 0;
+    margin: 0;
+}
+
+.accordion button[role="button"] {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin: $unit*0.125 0 0;
+}
+
+.accordion *[role="region"] {
+    display: none;
+    padding: $unit;
+    margin: 0;
+    background-color: darken($background-color, 10%);
+}
+
+.accordion button[aria-expanded="true"]:after,
+.accordion button[aria-expanded="false"]:after {
+    content: '\25BC';
+    float: right;
+    font-size: 0.66em;
+    display: block;
+    margin-top: $unit*0.25;
+}
+
+.accordion button[aria-expanded="true"]:after {
+    content: '\25B2';
+}

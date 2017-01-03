@@ -1,15 +1,11 @@
 ---
-layout: default
+layout: page
 name: article
 title:  "Article"
 ---
 
 <article style="border: dashed 1px #eee;">Stuff inside an article</article>
 
-<div class="codeview">
-    <label class="codeview__label" for="article">Toggle code</label>
-    <input class="codeview__checkbox" type="checkbox" id="article">
-    {% highlight html %}
+{% highlight html %}
 <article>Stuff inside an article</article>
-    {% endhighlight %}
-</div>
+{% endhighlight %}

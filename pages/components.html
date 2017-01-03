@@ -6,15 +6,8 @@ layout: default
     <h1>Components</h1>    
 </header>
 
-<nav class="subnav">
+<nav class="grid">
     {% for component in site.components %}
-    <a href="#{{ component.title }}">{{ component.title }}</a>
+    <a href="{{ component.url | prepend: site.baseurl }}">{{ component.title }}</a>
     {% endfor %}
 </nav>
-
-{% for component in site.components %}
-<article id="{{ component.title }}">
-    <h2>{{ component.title }}</h2>
-    {{ component.content }}
-</article>
-{% endfor %}
