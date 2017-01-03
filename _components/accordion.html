@@ -1,0 +1,60 @@
+---
+layout: page
+name: accordion
+title:  "Accordion"
+collection: components
+---
+
+<p>Uses aria roles to turn a collection of items into a foldable accordion.</p>
+
+<h3>Accordion example:</h3>
+
+<section class="accordion">
+    
+    <h4 role="heading">
+        <button role="button" id="acc-button-1" aria-controls="acc-content-1" aria-expanded="true">Item header 1</button>
+    </h4>
+    <div id="acc-content-1" aria-labelledby="acc-button-1" role="region">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    </div>
+    
+    <h4 role="heading">
+        <button role="button" id="acc-button-2" aria-controls="acc-content-2" aria-expanded="false">Item header 2</button>
+    </h4>
+    <div id="acc-content-2" aria-labelledby="acc-button-2" role="region">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    </div>
+    
+    <h4 role="heading">
+        <button role="button" id="acc-button-3" aria-controls="acc-content-3" aria-expanded="false">Item header 3</button>
+    </h4>
+    <div id="acc-content-3" aria-labelledby="acc-button-3" role="region">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        </p>
+    </div>
+    
+</section>
+    
+{% highlight html %}
+<section class="accordion">
+    
+    <h4 role="heading">
+        <button role="button" id="acc-button-1" aria-controls="acc-content-1" aria-expanded="true">Item header 1</button>
+    </h4>
+    <div id="acc-content-1" aria-labelledby="acc-button-1" role="region">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    </div>
+    
+    <h4 role="heading">
+        <button role="button" id="acc-button-2" aria-controls="acc-content-2" aria-expanded="false">Item header 2</button>
+    </h4>
+    <div id="acc-content-2" aria-labelledby="acc-button-2" role="region">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    </div>
+    
+</section>
+{% endhighlight %}

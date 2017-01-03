@@ -1,19 +1,15 @@
 ---
-layout: default
+layout: page
 name: thematic-break
 title:  "Thematic break (divider)"
 ---
 
-<p>Some content</p>
+<p>Some content before divider</p>
 <hr>
-<p>Some different content</p>
+<p>Some content after divider</p>
 
-<div class="codeview">
-    <label class="codeview__label" for="insc">Toggle code</label>
-    <input class="codeview__checkbox" type="checkbox" id="insc">
-    {% highlight html %}
-<p>Some content</p>
+{% highlight html %}
+<p>Some content before divider</p>
 <hr>
-<p>Some different content</p>
-    {% endhighlight %}
-</div>
+<p>Some content after divider</p>
+{% endhighlight %}

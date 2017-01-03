@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 name: section
 title:  "Section"
 ---
@@ -8,12 +8,8 @@ title:  "Section"
     Stuff inside a section. Preferably some <a href="#Article">articles.</a>
 </section>
 
-<div class="codeview">
-    <label class="codeview__label" for="section">Toggle code</label>
-    <input class="codeview__checkbox" type="checkbox" id="section">
-    {% highlight html %}
+{% highlight html %}
 <section>
     Stuff inside a section.
 </section>
-    {% endhighlight %}
-</div>
+{% endhighlight %}
