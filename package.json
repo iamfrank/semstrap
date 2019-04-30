@@ -18,7 +18,9 @@
         "url": "git+https://github.com/iamfrank/semstrap.git"
     },
     "keywords": [
-        "css"
+        "base styles",
+        "css",
+        "postcss"
     ],
     "author": "iamfrank",
     "license": "GPL-3.0",

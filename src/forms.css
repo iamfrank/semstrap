@@ -1,6 +1,5 @@
 fieldset {
     display: block;
-    background-color: var(--grey1);
     padding: $unit;
     border: none;
 }

@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Semstrap - basic styling withouth the bloat</title>
+        <title>Semstrap: Basic styling withouth the bloat</title>
         <link rel="stylesheet" href="./dist/semstrap.css">
         <style>
 
@@ -21,6 +21,15 @@
             }
             .hero .byline {
                 text-align: center;
+            }
+
+            /* Navigation */
+            .sitenav {
+                padding: 1rem;
+            }
+            .sitenav a {
+                display: block;
+                padding: .5rem 0;
             }
 
         </style>
@@ -42,16 +51,28 @@
         </header>
         
         <main>
+
+            <nav class="sitenav">
+                <a href="#headings">Headings (H1, H2 &hellip;)</a>
+                <a href="#forms">Forms</a>
+                <a href="#links">Links</a>
+                <a href="#article">Article</a>
+                <a href="#buttons">Buttons</a>
+                <a href="#code">Code</a>
+                <a href="#definition-list">Definition list</a>
+                <a href="#tables">Tables</a>
+                <a href="#hr">Thematic break (hr)</a>
+            </nav>
         
             <article id="about">
-                
+
+                <h1>About Semstrap</h1>
                 <p>
                     Many developers turn to frontend frameworks just to easily improve the looks of their web projects. Unfortunately this approach results in a loot of framework-specific code like class names and wrapping elements being added to your HTML. Sometimes you even end up adding a bit of code from a another web project that relies on a different front end framework and you get a mess of dependencies and conflicting class names.
                 </p>
                 <p>
                     Semstrap styles only targets elements. When you want to use it to style a form element you just add the element like so:
                 </p>
-                
                 <code>
                     <pre>
 &ltform&gt
@@ -60,11 +81,9 @@
 &lt/form&gt
                     </pre>
                 </code>
-                
                 <p>
                     ... as opposed to:
                 </p>
-                
                 <code>
                     <pre>
 &ltform class="form form-modifier"&gt
@@ -75,22 +94,242 @@
 &lt/form&gt
                     </pre>
                 </code>
-                
                 <p>Check it out on Github: <a href="https://github.com/iamfrank/semstrap">https://github.com/iamfrank/semstrap</a></p>
-                
                 <h3>Using it</h3>
                 <p>
                     If you want to use Semstrap in your project, just download semstrap.css from here and add it to your HTML files:
                 </p>
-                
                 <code>    
-                        &ltlink rel="stylesheet" type="text/css" href="semstrap.css"&gt
+&ltlink rel="stylesheet" type="text/css" href="semstrap.css"&gt
                 </code>
-                
                 <p>
                     That's it. Take a look beneath to see the cool stuff you can build with pure HTML elements and Semstrap.
                 </p>
-            
+            </article>
+
+            <article id="article">
+                <h1>Article</h1>
+                <article style="border: dashed 1px #eee;">Stuff inside an article</article>
+            </article>
+
+            <article id="buttons">
+                <h1>Buttons</h1>
+                <button onclick="alert('It was touched');">Touch me</button>
+                <button disabled>Disabled</button>
+                <h2>Buttons in forms </h2>
+                <form>
+                    <input type="submit" value="Submit">
+                    <button type="button">With button element</button>
+                    <input type="button" value="With input element">
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Nothing" disabled>
+                </form>
+            </article>
+
+            <article id="code">
+                <h1>Code</h1>
+                <code>Some code</code>
+            </article>
+
+            <article id="forms">
+                <h1>Forms</h1>
+                <a href="../index.html">Back</a>
+                <form>
+                    <fieldset>
+                        <label for="myInputField1">Text entry</label>
+                        <input id="myInputField1" type="text" placeholder="Enter some text" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="myInputField2">Optional text</label>
+                        <input id="myInputField2" type="text" placeholder="">
+                    </fieldset>
+                    <fieldset>
+                        <input id="myInputField3" type="checkbox">
+                        <label for="myInputField3">Tick this box</label>
+                    </fieldset>
+                    <fieldset>
+                        <button>Cancel</button>
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
+    
+                <h2>Special input fields</h2>
+                <p>There are specialized input fields available. These look like the text input field but trigger different keyboard layouts on mobile and tablet devices and can make use of validation.</p>
+    
+                <form>
+                    <fieldset>    
+                        <label for="mySearchField">Search</label>
+                        <input id="mySearchField" type="search" placeholder="Enter search">
+                    </fieldset>
+                    <fieldset>
+                        <label for="myEmailField">Email</label>
+                        <input id="myEmailField" type="email" placeholder="Enter email address">
+                    </fieldset>
+                    <fieldset>
+                        <label for="myURLField">URL</label>
+                        <input id="myURLField" type="url" placeholder="Enter URL">
+                    </fieldset>
+                    <fieldset>
+                        <label for="myPhoneField">Phone</label>
+                        <input id="myPhoneField" type="phone" placeholder="Enter phone number">
+                    </fieldset>
+                    <fieldset>
+                        <label for="myPasswordField">Password</label>
+                        <input id="myPasswordField" type="password" placeholder="Enter password">
+                    </fieldset>
+                    <fieldset>
+                        <label for="myFileField">File</label>
+                        <input id="myFileField" type="file">
+                    </fieldset>
+                </form>
+                <h2>Checkbox</h2>
+                <form>
+                    <fieldset>
+                        <input id="myCheckboxA" type="checkbox" checked>
+                        <label for="myCheckboxA">Checkbox A</label>
+                        <input id="myCheckboxB" type="checkbox">
+                        <label for="myCheckboxB">Checkbox B</label>
+                    </fieldset>
+                </form>
+                <h2>Radio button</h2>
+    
+                <form>
+                    <fieldset>    
+                        
+                        <input id="myRadioA" type="radio" name="radioButtonSet" checked>
+                        <label for="myRadioA">Radio button A</label>
+                        
+                        <input id="myRadioB" type="radio" name="radioButtonSet">
+                        <label for="myRadioB">Radio button B</label>
+                            
+                        <input id="myRadioC" type="radio" name="radioButtonSet">
+                        <label for="myRadioC">Radio button C</label>
+                        
+                    </fieldset>
+                </form>
+                <h2>Required input</h2>
+                <p>Adding the <em>required</em> attribute to an input field will make will make it impossible to submit the form without entering a value.</p>
+    
+                <form>
+                    <fieldset>
+                        <label for="myInputField2">Text field</label>
+                        <input required id="myInputField2" type="text" placeholder="Enter some text">
+                    </fieldset>
+                    <fieldset>
+                        <label for="reqSelect">Select field</label>
+                        <select id="reqSelect" required placeholder="Pick one">
+                            <option value="one">One</option>
+                            <option value="two">Two</option>
+                            <option disabled>Disabled option</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <label for="reqTextarea">Textarea field</label>
+                        <textarea id="reqTextarea" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <input required type="checkbox" id="reqCheckBox">
+                        <label for="reqCheckBox">Checkbox</label>
+                    </fieldset>
+                    <fieldset>
+                        <input required type="radio" value="yes" name="radiogroup" id="reqRadio1">
+                        <label for="reqRadio1">Required "yes"</label>
+                        <input required type="radio" value="no" name="radiogroup" id="reqRadio2">
+                        <label for="reqRadio2">Required "No"</label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
+                <h2>Validating required inputs</h2>
+                <p>
+                    Browsers will automatically do some basic validation based on the input type.
+                    Below are som examples of input fields that do basic validation and visually indicate failure/success.
+                    The latter example uses the <em>pattern</em> attribute to validate using a regex pattern.
+                </p>
+                <form>
+                    <fieldset>
+                        <label for="validEmailInput">Validating email:</label>
+                        <input required id="validEmailInput" type="email" placeholder="Enter a valid email address">
+                    </fieldset>
+                    <fieldset>
+                        <label for="validEmailInput">Validating URL using regex:</label>
+                        <input required id="validEmailInput" type="url" pattern="https?://.+" placeholder="Anything that starts with 'http'">
+                    </fieldset>
+                    <fieldset>
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
+            </article>
+
+            <article id="definition-list">
+                <h1>Definition list</h1>
+                <dl>
+                    <dt>Term A</dt>
+                    <dd>Definition description A</dd>
+                    <dt>Term B</dt>
+                    <dd>Definition description B. <br>Can be an entire multiline paragraph.</dd>
+                    <dt>Term C</dt>
+                    <dd>Definition description C</dd>
+                </dl>
+            </article>
+
+            <article id="headings">
+                <h1>Headings</h1>
+                <a href="../index.html">Back</a>
+                <p>
+                    Headings are defined with the &lt;h1> to &lt;h6> tags.
+                    &lt;h1> defines the top level heading
+                </p>
+                <h1>This is a heading level 1</h1>
+                <h2>This is a heading level 2</h2>
+                <h3>This is a heading level 3</h3>
+                <h4>This is a heading level 4</h4>
+                <h5>This is a heading level 5</h5>
+                <h6>This is a heading level 6</h6>
+            </article>
+
+            <article id="links">
+                <h1>Links</h1>
+                <a href="#">Going somewhere?</a>
+            </article>
+
+            <article id="tables">
+                <h1>Tables</h1>
+                <p>Tables are for displaying large datasets in a structured manner.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Table header 1</th>
+                            <th>Table header 2</th>
+                            <th>Table header 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Table data 1.1</td>
+                            <td>Table data 1.2</td>
+                            <td>Table data 1.3</td>
+                        </tr>
+                        <tr>
+                            <td>Table data 2.1</td>
+                            <td>Table data 2.2</td>
+                            <td>Table data 2.3</td>
+                        </tr>
+                        <tr>
+                            <td>Table data 3.1</td>
+                            <td>Table data 3.2</td>
+                            <td>Table data 3.3</td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </article>
+
+            <article id="hr">
+                <h1>Thematic break (hr)</h1>
+                <p>Some content before divider</p>
+                <hr>
+                <p>Some content after divider</p>
             </article>
 
         </main>
