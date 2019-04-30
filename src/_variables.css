@@ -6,7 +6,7 @@ $unit: 1rem;
 
 :root {
     --hue: 200;
-    --saturation: 50%;
+    --saturation: 10%;
 
     --grey0: hsl(var(--hue), var(--saturation), 100%);
     --grey1: hsl(var(--hue), var(--saturation), 90%);
@@ -20,13 +20,13 @@ $unit: 1rem;
     --grey9: hsl(var(--hue), var(--saturation), 10%);
     --grey10: hsl(var(--hue), var(--saturation), 0%);
 
-    --success: hsl(120, 33%, 75%);
-    --warning: hsl(60, 33%, 75%);
-    --danger: hsl(0, 33%, 75%);
+    --success: hsl(120, 33%, 33%);
+    --warning: hsl(60, 33%, 33%);
+    --danger: hsl(0, 33%, 33%);
 
     --font: 'Roboto', sans-serif;
 
-    --unit: $unit;
+    --unit: 1rem;
 
     --break-small: 30rem;
     --break-medium: 45rem;

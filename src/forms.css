@@ -1,6 +1,6 @@
 fieldset {
     display: block;
-    padding: $unit;
+    padding: 1rem;
     border: none;
 }
 
@@ -14,20 +14,20 @@ textarea,
 select {
     display: inline-block;
     border: solid 1px var(--grey3);
-    padding: $unit*0.25 $unit*0.5;
+    padding: 0.25rem 0.5rem;
     background-color: var(--grey1);
     color: var(--grey10);
     
     &:focus {
         outline: none;
-        box-shadow: 0 $unit*0.25 $unit*0.25 var(--grey5); 
+        box-shadow: 0 .25rem .25rem var(--grey5); 
     }
 }
 
 input:required,
 textarea:required,
 select:required {
-    border-width: 1px 1px 1px $unit*0.5;
+    border-width: 1px;
     border-left-color: var(--danger);
 }
 
@@ -53,15 +53,16 @@ input[type="checkbox"] {
     & + label {
         vertical-align: middle;
         display: block;
+        opacity: 1;
     }
     & + label::before {
         content: ' ';
         display: inline-block;
-        width: $unit;
-        height: $unit;
+        width: 1rem;
+        height: 1rem;
         background-color: var(--grey1);
-        margin-right: $unit*0.25;
-        padding: $unit*0.25;
+        margin-right: 0.25rem;
+        padding: 0.25rem;
         line-height: 1;
         vertical-align: middle;
         text-align: center;
@@ -70,13 +71,13 @@ input[type="checkbox"] {
         content: '*';
         color: var(--danger);
         font-weight: bold;
-        padding: 0 $unit*0.25;
+        padding: 0 0.25rem;
     }
     &:required:valid + label::after {
         color: var(--success);
     }
     &:focus + label {
-        box-shadow: 0 $unit*0.25 $unit*0.25 var(--grey5); 
+        box-shadow: 0 0.25rem 0.25rem var(--grey5); 
     }
     &:checked + label::before {
         content: '✔';
@@ -91,7 +92,7 @@ input[type="radio"]{
         padding: 0;
         border-radius: 50%;
         background-color: var(--grey5);
-        border: solid $unit*0.25 var(--grey1);
+        border: solid .25rem var(--grey1);
     }
     &:checked + label::before {
         content: '';

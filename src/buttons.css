@@ -4,12 +4,12 @@ input[type="button"],
 input[type="reset"] {
     background-color: var(--success);
     color: var(--grey0);
-    box-shadow: 0 $unit*0.1 $unit*0.1 var(--grey10);
+    box-shadow: 0 .1rem 0.1rem var(--grey10);
     border: none;
-    padding: $unit*0.5 $unit;
-    border-radius: $unit*0.25;
+    padding: .5rem 1rem;
+    border-radius: 0.25rem;
     cursor: pointer;
-    margin-bottom: $unit*0.33;
+    margin-bottom: 0.33rem;
 }
 
 input[type="button"],

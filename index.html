@@ -25,11 +25,23 @@
 
             /* Navigation */
             .sitenav {
-                padding: 1rem;
+                
             }
             .sitenav a {
                 display: block;
                 padding: .5rem 0;
+            }
+
+            .container {
+                margin: 0 auto;
+                padding: 1rem;
+                width: 100%;
+                max-width: 45rem;
+            }
+
+            footer {
+                margin-top: 1rem;
+                background-color: hsla(0,0%,0%,.15);
             }
 
         </style>
@@ -41,10 +53,10 @@
 
             <h1 class="brand-header">
                 <img src="./assets/images/logo.svg" alt="">
-                <span>Semstrap</span>
+                <span style="color: #fff;">Semstrap</span>
             </h1>
             <p class="byline">
-                Semstrap adds styles for simple, semantic HTML that don't make your eyes bleed
+                Simple styles for semantic HTML that don't make your eyes bleed
             </p>
             <a class="more-arrow" href="#about" title="more">&#10132;</a>
             
@@ -52,16 +64,16 @@
         
         <main>
 
-            <nav class="sitenav">
-                <a href="#article">Article</a>
-                <a href="#buttons">Buttons</a>
-                <a href="#code">Code</a>
-                <a href="#definition-list">Definition list</a>
-                <a href="#forms">Forms</a>
-                <a href="#headings">Headings (H1, H2 &hellip;)</a>
-                <a href="#links">Links</a>
-                <a href="#tables">Tables</a>
-                <a href="#hr">Thematic break (hr)</a>
+            <nav class="sitenav container">
+                <a href="#article">Article &lt;article&gt;</a>
+                <a href="#buttons">Buttons &lt;button&gt;</a>
+                <a href="#code">Code &lt;code&gt;</a>
+                <a href="#definition-list">Definition list &lt;dl&gt;</a>
+                <a href="#forms">Forms &lt;form&gt;</a>
+                <a href="#headings">Headings &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt; &hellip;</a>
+                <a href="#links">Links &lt;a&gt;</a>
+                <a href="#tables">Tables &lt;table&gt;</a>
+                <a href="#hr">Thematic break &lt;hr&gt;</a>
             </nav>
         
             <article id="about">
@@ -135,7 +147,6 @@
 
             <article id="forms">
                 <h1>Forms</h1>
-                <a href="../index.html">Back</a>
                 <form>
                     <fieldset>
                         <label for="myInputField1">Text entry</label>
@@ -337,8 +348,8 @@
         </main>
         
         <footer>
-            <p>
-                Created with &#9829; by <a href="https://github.com/iamfrank/">iamfrank</a> at github
+            <p class="container">
+                Created with &#9829; by <a href="https://github.com/iamfrank/">iamfrank</a>
             </p>
         </footer>
     

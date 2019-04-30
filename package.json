@@ -1,7 +1,7 @@
 {
     "name": "semstrap",
     "version": "1.0.0",
-    "description": "Semstrap - basic theming without the bloat",
+    "description": "Semstrap adds simple styles for semantic HTML that don't make your eyes bleed.",
     "main": "src/_index.css",
     "dependencies": {},
     "devDependencies": {

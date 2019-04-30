@@ -1,12 +1,6 @@
 article {
-    margin: 0;
-    padding: $unit;
-}
-
-@media screen and (min-width: $media-medium) {
-    
-    article {
-        padding: $unit*2;
-    }
-    
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+    max-width: $media-medium;
 }
