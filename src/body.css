@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+    border: solid 1px var(--warning) !important;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    color: var(--grey10);
+    background-color: var(--grey0);
+}

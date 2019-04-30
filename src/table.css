@@ -1,0 +1,57 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead,
+tbody,
+tr {
+    margin: 0;
+}
+
+th,
+td {
+    padding: $unit*0.5;
+    text-align: left;
+    margin: 0;
+}
+
+
+@media screen and (max-width: $media-medium) {
+    
+    table,
+    tbody {
+        display: block;
+    }
+    
+    thead {
+        display: none;
+    }
+    
+    tr {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 0 $unit*0.125;
+        background-color: var(--grey1);
+    }
+    
+    th,
+    td {
+        display: inline-block;
+        
+        &:first-child {
+            font-weight: bold;
+        }
+    }
+    
+}
+
+
+@media screen and (min-width: $media-medium) {
+    
+    th,
+    td {
+        border-bottom: solid 1px var(--grey5);
+    }
+    
+}

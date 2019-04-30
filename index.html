@@ -1,29 +1,47 @@
----
-layout: compress
----
-
 <!DOCTYPE html>
 <html>
-    
-    {% include head.html %}
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Semstrap - basic styling withouth the bloat</title>
+        <link rel="stylesheet" href="./dist/semstrap.css">
+        <style>
 
-    <body class="splash-page">
+            /* Header */
+            .hero {
+                background: url(./assets/images/bg-img-1.jpg) no-repeat center center transparent;
+                background-size: cover;
+                color: #fff;
+                font-size: 1.25em;
+                text-shadow: 0 0 0.25rem rgba(0,0,0,.75);
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+            }
+            .hero .byline {
+                text-align: center;
+            }
+
+        </style>
+    </head>    
+
+    <body>
         
-        {% include header.html %}
+        <header class="hero">
+
+            <h1 class="brand-header">
+                <img src="./assets/images/logo.svg" alt="">
+                <span>Semstrap</span>
+            </h1>
+            <p class="byline">
+                Semstrap adds styles for simple, semantic HTML that don't make your eyes bleed
+            </p>
+            <a class="more-arrow" href="#about" title="more">&#10132;</a>
+            
+        </header>
         
         <main>
-            
-            <section class="hero">
-                <h1>
-                    <img src="{{ '/images/logo.svg' | prepend: site.baseurl }}" alt="">
-                    <span>{{ site.title }}</span>
-                </h1>
-                <p class="byline">
-                    Semstrap is a framework for web projects that has the convenience of frameworks like Bootstrap but uses only semantic HTML and vanilla Javascript.
-                </p>
-                <a class="more-arrow" href="#about" title="more">&#10132;</a>
-                
-            </section>
         
             <article id="about">
                 
@@ -34,25 +52,29 @@ layout: compress
                     Semstrap styles only targets elements. When you want to use it to style a form element you just add the element like so:
                 </p>
                 
-                {% highlight html %}
-<form>
-    <label for="inputEmail">Email address</label>
-    <input id="inputEmail" type="email">
-</form>
-                {% endhighlight %}
+                <code>
+                    <pre>
+&ltform&gt
+    &ltlabel for="inputEmail"&gtEmail address&lt/label&gt
+    &ltinput id="inputEmail" type="email"&gt
+&lt/form&gt
+                    </pre>
+                </code>
                 
                 <p>
                     ... as opposed to:
                 </p>
                 
-                {% highlight html %}
-<form class="form form-modifier">
-    <div class="form__wrapper form__wrapper-modifier">
-        <label class="form__wrapper__label" for="exampleInputEmail1">Email address</label>
-        <input class="form__wrapper__input form__wrapper__input-modifier" type="email" class="form-control">
-    </div>
-</form>
-                {% endhighlight %}
+                <code>
+                    <pre>
+&ltform class="form form-modifier"&gt
+    &ltdiv class="form__wrapper form__wrapper-modifier"&gt
+        &ltlabel class="form__wrapper__label" for="exampleInputEmail1"&gtEmail address&lt/label&gt
+        &ltinput class="form__wrapper__input form__wrapper__input-modifier" type="email" id="exampleInputEmail1"&gt
+    &lt/div&gt
+&lt/form&gt
+                    </pre>
+                </code>
                 
                 <p>Check it out on Github: <a href="https://github.com/iamfrank/semstrap">https://github.com/iamfrank/semstrap</a></p>
                 
@@ -61,21 +83,25 @@ layout: compress
                     If you want to use Semstrap in your project, just download semstrap.css from here and add it to your HTML files:
                 </p>
                 
-                {% highlight html %}        
-<link rel='stylesheet' type='text/css' href='semstrap.css'>
-                {% endhighlight %}
+                <code>    
+                        &ltlink rel="stylesheet" type="text/css" href="semstrap.css"&gt
+                </code>
                 
                 <p>
-                    That's it. Take a look at <a href="{{ '/pages/elements.html' | prepend: site.baseurl }}">the docs</a> to see the cool stuff you can build with pure HTML elements and Semstrap.
+                    That's it. Take a look beneath to see the cool stuff you can build with pure HTML elements and Semstrap.
                 </p>
             
             </article>
 
         </main>
         
-        {% include footer.html %}
+        <footer>
+
+            <p>
+                Created with &#9829; by <a href="https://github.com/iamfrank/">iamfrank</a> at github
+            </p>
         
-        <script src="{{ '/javascript/semstrap.js' | prepend: site.baseurl }}"></script>
+        </footer>
     
     </body>
 

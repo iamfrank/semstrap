@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700');
+
+$media-medium: 45rem;
+$media-large: 60rem;
+$unit: 1rem;
+
+:root {
+    --hue: 200;
+    --saturation: 50%;
+
+    --grey0: hsl(var(--hue), var(--saturation), 100%);
+    --grey1: hsl(var(--hue), var(--saturation), 90%);
+    --grey2: hsl(var(--hue), var(--saturation), 80%);
+    --grey3: hsl(var(--hue), var(--saturation), 70%);
+    --grey4: hsl(var(--hue), var(--saturation), 60%);
+    --grey5: hsl(var(--hue), var(--saturation), 50%);
+    --grey6: hsl(var(--hue), var(--saturation), 40%);
+    --grey7: hsl(var(--hue), var(--saturation), 30%);
+    --grey8: hsl(var(--hue), var(--saturation), 20%);
+    --grey9: hsl(var(--hue), var(--saturation), 10%);
+    --grey10: hsl(var(--hue), var(--saturation), 0%);
+
+    --success: hsl(120, 33%, 75%);
+    --warning: hsl(60, 33%, 75%);
+    --danger: hsl(0, 33%, 75%);
+
+    --font: 'Roboto', sans-serif;
+
+    --unit: $unit;
+
+    --break-small: 30rem;
+    --break-medium: 45rem;
+    --break-large: 60rem;
+}

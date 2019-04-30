@@ -1,0 +1,6 @@
+hr {
+    border: none;
+    border-top: solid $unit*0.1 var(--grey5);
+    padding: 0;
+    margin: $unit*2 0;
+}

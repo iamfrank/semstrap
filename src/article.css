@@ -1,0 +1,12 @@
+article {
+    margin: 0;
+    padding: $unit;
+}
+
+@media screen and (min-width: $media-medium) {
+    
+    article {
+        padding: $unit*2;
+    }
+    
+}

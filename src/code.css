@@ -1,0 +1,6 @@
+code {
+    display: block;
+    background-color: var(--grey1);
+    padding: $unit;
+    overflow: auto;
+}

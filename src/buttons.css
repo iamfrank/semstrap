@@ -1,0 +1,43 @@
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    background-color: var(--success);
+    color: var(--grey0);
+    box-shadow: 0 $unit*0.1 $unit*0.1 var(--grey10);
+    border: none;
+    padding: $unit*0.5 $unit;
+    border-radius: $unit*0.25;
+    cursor: pointer;
+    margin-bottom: $unit*0.33;
+}
+
+input[type="button"],
+form button,
+input[type="reset"] {
+    background-color: var(--success);
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    background-color: var(--success);
+}
+
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+form button:active,
+input[type="reset"]:active {
+    background-color: var(--success);
+}
+
+button[disabled],
+input[disabled],
+input[disabled]:hover,
+input[disabled]:active {
+    opacity: .5;
+    box-shadow: none;
+    cursor: default;
+}

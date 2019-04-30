@@ -1,0 +1,32 @@
+{
+    "name": "semstrap",
+    "version": "1.0.0",
+    "description": "Semstrap - basic theming without the bloat",
+    "main": "src/_index.css",
+    "dependencies": {},
+    "devDependencies": {
+        "cssnano": "^4.1.10",
+        "postcss-cli": "^6.1.2",
+        "postcss-import": "^12.0.1",
+        "precss": "^4.0.0"
+    },
+    "scripts": {
+        "build": "node_modules/.bin/postcss src/_index.css -o dist/semstrap.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/iamfrank/semstrap.git"
+    },
+    "keywords": [
+        "css"
+    ],
+    "author": "iamfrank",
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/iamfrank/semstrap/issues"
+    },
+    "homepage": "https://github.com/iamfrank/semstrap#readme",
+    "browserslist": [
+        "last 1 version, > 1%, not dead"
+    ]
+}

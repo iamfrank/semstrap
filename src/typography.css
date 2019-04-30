@@ -1,0 +1,85 @@
+body {
+    font: 1em/1.4 var(--font);
+}
+
+body,
+caption,
+th,
+td,
+input,
+textarea,
+select,
+option,
+legend,
+fieldset,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size-adjust: 0.5;
+}
+
+blockquote {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    opacity: .75;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 .5rem;
+}
+
+@media (min-width: $media-medium) {
+    
+    body {
+        font-size: 1rem;
+        line-height: 1.375;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        line-height: 1.125;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        line-height: 1.25;
+    }
+      
+    h3 {
+        font-size: 1.5rem;
+        line-height: 1.25;
+    }
+      
+    h4 {
+        line-height: 1.22222222;
+    }
+      
+    blockquote {
+        font-size: 1.5rem;
+        line-height: 1.458;
+    }
+    
+}
+
+@media (min-width: $media-large) {
+  
+    h1 {
+        font-size: 3rem;
+        line-height: 1.05;
+    }
+    
+    h2 {
+        font-size: 2.25rem;
+        line-height: 1.25;
+    }
+    
+    h3 {
+        font-size: 1.75rem;
+        line-height: 1.25;
+    }
+    
+}

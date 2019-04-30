@@ -1,0 +1,101 @@
+fieldset {
+    display: block;
+    background-color: var(--grey1);
+    padding: $unit;
+    border: none;
+}
+
+label {
+    display: block;
+    opacity: .5;
+}
+
+input,
+textarea,
+select {
+    display: inline-block;
+    border: solid 1px var(--grey3);
+    padding: $unit*0.25 $unit*0.5;
+    background-color: var(--grey1);
+    color: var(--grey10);
+    
+    &:focus {
+        outline: none;
+        box-shadow: 0 $unit*0.25 $unit*0.25 var(--grey5); 
+    }
+}
+
+input:required,
+textarea:required,
+select:required {
+    border-width: 1px 1px 1px $unit*0.5;
+    border-left-color: var(--danger);
+}
+
+input:focus:invalid,
+textarea:focus:invalid,
+select:focus:invalid {
+    border-left-color: var(--danger);
+}
+
+input:required:valid,
+textarea:required:valid,
+select:required:valid {
+    border-left-color: var(--success);
+}
+
+
+/* Styles for radio and checkbox input */
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+    
+    & + label {
+        vertical-align: middle;
+        display: block;
+    }
+    & + label::before {
+        content: ' ';
+        display: inline-block;
+        width: $unit;
+        height: $unit;
+        background-color: var(--grey1);
+        margin-right: $unit*0.25;
+        padding: $unit*0.25;
+        line-height: 1;
+        vertical-align: middle;
+        text-align: center;
+    }
+    &:required + label::after {
+        content: '*';
+        color: var(--danger);
+        font-weight: bold;
+        padding: 0 $unit*0.25;
+    }
+    &:required:valid + label::after {
+        color: var(--success);
+    }
+    &:focus + label {
+        box-shadow: 0 $unit*0.25 $unit*0.25 var(--grey5); 
+    }
+    &:checked + label::before {
+        content: '✔';
+        color: var(--grey0);
+        background-color: var(--success);
+    }
+}
+
+input[type="radio"]{
+    
+    & + label::before {
+        padding: 0;
+        border-radius: 50%;
+        background-color: var(--grey5);
+        border: solid $unit*0.25 var(--grey1);
+    }
+    &:checked + label::before {
+        content: '';
+        background-color: var(--success);
+    }
+}

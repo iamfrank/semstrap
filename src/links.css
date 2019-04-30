@@ -1,0 +1,11 @@
+a,
+a:link,
+a:visited {
+    color: var(--success);
+    text-decoration: none;
+    border-bottom: solid 1px var(--success);
+}
+a:hover,
+a:active {
+    color: var(--success);
+}

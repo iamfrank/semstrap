@@ -1,0 +1,33 @@
+dl {
+    margin: 0;
+    padding: 0;
+}
+
+dt {
+    margin: 0;
+    padding: $unit*0.75 0 $unit*0.25;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    opacity: .5;
+}
+
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: $media-medium) {
+    
+    dt {
+        padding: 0 $unit 0 0;
+        float: left;
+        clear: left;
+        width: 10rem;
+    }
+
+    dd {
+        clear: right;
+        padding: 0 0 $unit*2 10rem;
+    }
+    
+}
