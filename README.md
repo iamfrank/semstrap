@@ -33,10 +33,10 @@ If you want to use Semstrap in your project, just download `semstrap.css` [from 
 That's it! Take a look at the [docs](https://iamfrank.github.io/semstrap/) to see the cool stuff you can build with pure HTML elements and Semstrap.
 
 
-## Custom uild
+## Custom build
 
 It's simple to make your own custom build. 
-# Clone the project
-# Fiddle with the code in `/src` folder
-# Run `npm run build` (if you have NodeJS/npm installed)
+1. Clone the project
+2. Fiddle with the code in `/src` folder
+2. Run `npm run build` (if you have NodeJS/npm installed)
 That's it! A new custom semstrap.css should be in the `dist` folder for you to enjoy.
