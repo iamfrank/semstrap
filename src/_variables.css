@@ -7,6 +7,7 @@ $unit: 1rem;
 :root {
     --hue: 200;
     --saturation: 10%;
+    --color1: 180;
 
     --grey0: hsl(var(--hue), var(--saturation), 100%);
     --grey1: hsl(var(--hue), var(--saturation), 90%);
@@ -20,6 +21,7 @@ $unit: 1rem;
     --grey9: hsl(var(--hue), var(--saturation), 10%);
     --grey10: hsl(var(--hue), var(--saturation), 0%);
 
+    --primary: hsl(var(--color1), 55%, 33%);
     --success: hsl(120, 33%, 33%);
     --warning: hsl(60, 33%, 33%);
     --danger: hsl(0, 33%, 33%);

@@ -1,28 +1,22 @@
 button,
+form button,
 input[type="submit"],
 input[type="button"],
 input[type="reset"] {
-    background-color: var(--success);
+    background-color: var(--primary);
     color: var(--grey0);
-    box-shadow: 0 .1rem 0.1rem var(--grey10);
+    box-shadow: 0 .1rem 0.1rem hsla(0, 0%, 50%, .5);
     border: none;
     padding: .5rem 1rem;
-    border-radius: 0.25rem;
     cursor: pointer;
     margin-bottom: 0.33rem;
-}
-
-input[type="button"],
-form button,
-input[type="reset"] {
-    background-color: var(--success);
 }
 
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-    background-color: var(--success);
+    background-color: hsl(var(--color1), 50%, 18%);
 }
 
 button:active,
@@ -30,7 +24,7 @@ input[type="submit"]:active,
 input[type="button"]:active,
 form button:active,
 input[type="reset"]:active {
-    background-color: var(--success);
+    background-color: hsl(var(--color1), 50%, 18%);
 }
 
 button[disabled],
@@ -40,4 +34,5 @@ input[disabled]:active {
     opacity: .5;
     box-shadow: none;
     cursor: default;
+    background-color: var(--primary)
 }

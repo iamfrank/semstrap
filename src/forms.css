@@ -1,22 +1,23 @@
 fieldset {
     display: block;
-    padding: 1rem;
+    padding: 1rem 0;
     border: none;
 }
 
 label {
     display: block;
-    opacity: .5;
+    opacity: .75;
 }
 
 input,
 textarea,
 select {
     display: inline-block;
-    border: solid 1px var(--grey3);
+    border: solid 1px var(--grey5);
     padding: 0.25rem 0.5rem;
-    background-color: var(--grey1);
+    background-color: var(--grey0);
     color: var(--grey10);
+    font-size: 1rem;
     
     &:focus {
         outline: none;

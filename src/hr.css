@@ -1,6 +1,6 @@
 hr {
     border: none;
-    border-top: solid $unit*0.1 var(--grey5);
+    border-top: solid .1rem var(--grey2);
     padding: 0;
-    margin: $unit*2 0;
+    margin: 2rem 0;
 }

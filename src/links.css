@@ -1,11 +1,12 @@
 a,
 a:link,
 a:visited {
-    color: var(--success);
+    color: var(--primary);
     text-decoration: none;
-    border-bottom: solid 1px var(--success);
+    border-bottom: solid 1px hsl(var(--color1), 50%, 66%);
 }
 a:hover,
 a:active {
-    color: var(--success);
+    color: hsl(var(--color1), 50%, 18%);
+    border-color: hsl(var(--color1), 50%, 33%);
 }
