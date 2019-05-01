@@ -14,24 +14,29 @@
                 background-size: cover;
                 color: #fff;
                 font-size: 1.25em;
-                text-shadow: 0 0 0.25rem rgba(0,0,0,.75);
+                text-shadow: 0 0 0.25rem hsla(0,0%,0%,.8);
                 display: flex;
                 flex-flow: column;
                 align-items: center;
+                padding: 4rem;
+                border-bottom: solid .5rem hsl(0,0%,90%);
             }
-            .hero .byline {
+            .brand-header {
+                font-size: 2.5em;
+            }
+            .byline {
                 text-align: center;
+                text-shadow: 0 0 0.125rem hsla(0,0%,0%,.9);
+                padding: .25rem;
             }
 
             /* Navigation */
-            .sitenav {
-                
-            }
             .sitenav a {
                 display: block;
                 padding: .5rem 0;
             }
 
+            /* General layout */
             .container {
                 margin: 0 auto;
                 padding: 1rem;
@@ -39,9 +44,28 @@
                 max-width: 45rem;
             }
 
+            /* Footer */
             footer {
                 margin-top: 1rem;
                 background-color: hsla(0,0%,0%,.15);
+            }
+
+            @media screen and (min-width: 45rem) {
+
+                main {
+                    display: grid;
+                    grid-template-columns: 16rem auto ;
+                    margin: 0 auto;
+                    max-width: 60rem;
+                }
+                .sitenav {
+                    grid-column: 1;
+                }
+                article {
+                    grid-column: 2;
+                    overflow-x: auto;
+                }
+
             }
 
         </style>
@@ -50,16 +74,13 @@
     <body>
         
         <header class="hero">
-
             <h1 class="brand-header">
-                <img src="./assets/images/logo.svg" alt="">
+                <img src="./assets/images/logo.svg" alt="Tromsø mountains, Norway, Photo by Frank Thomsen">
                 <span style="color: #fff;">Semstrap</span>
             </h1>
             <p class="byline">
                 Simple styles for semantic HTML that don't make your eyes bleed
             </p>
-            <a class="more-arrow" href="#about" title="more">&#10132;</a>
-            
         </header>
         
         <main>
@@ -161,7 +182,6 @@
                         <label for="myInputField3">Tick this box</label>
                     </fieldset>
                     <fieldset>
-                        <button>Cancel</button>
                         <input type="submit" value="Submit">
                     </fieldset>
                 </form>

@@ -5,18 +5,21 @@ input[type="button"],
 input[type="reset"] {
     background-color: var(--primary);
     color: var(--grey0);
-    box-shadow: 0 .1rem 0.1rem hsla(0, 0%, 50%, .5);
     border: none;
     padding: .5rem 1rem;
     cursor: pointer;
     margin-bottom: 0.33rem;
+    font-size: 1em;
+    border: solid 1px var(--primary);
 }
 
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-    background-color: hsl(var(--color1), 50%, 18%);
+    background-color: hsl(var(--color1), 80%, 30%);
+    border-color: hsl(var(--color1), 80%, 30%);
+    box-shadow: 0 .25rem .5rem  var(--grey5);
 }
 
 button:active,
@@ -24,7 +27,17 @@ input[type="submit"]:active,
 input[type="button"]:active,
 form button:active,
 input[type="reset"]:active {
-    background-color: hsl(var(--color1), 50%, 18%);
+    background-color: hsl(var(--color1), 80%, 30%);
+    border-color: hsl(var(--color1), 80%, 30%);
+}
+
+button:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+form button:focus,
+input[type="reset"]:focus {
+    box-shadow: 0 .25rem .5rem  var(--grey5);
+    outline: none;
 }
 
 button[disabled],
@@ -34,5 +47,6 @@ input[disabled]:active {
     opacity: .5;
     box-shadow: none;
     cursor: default;
-    background-color: var(--primary)
+    background-color: hsl(var(--color1), 40%, 50%);
+    border-color: hsl(var(--color1), 40%, 50%);
 }

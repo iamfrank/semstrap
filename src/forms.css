@@ -6,42 +6,38 @@ fieldset {
 
 label {
     display: block;
-    opacity: .75;
 }
 
 input,
 textarea,
 select {
     display: inline-block;
-    border: solid 1px var(--grey5);
+    border: solid 1px var(--grey3);
     padding: 0.25rem 0.5rem;
     background-color: var(--grey0);
     color: var(--grey10);
     font-size: 1rem;
-    
-    &:focus {
-        outline: none;
-        box-shadow: 0 .25rem .25rem var(--grey5); 
-    }
 }
 
-input:required,
-textarea:required,
-select:required {
-    border-width: 1px;
-    border-left-color: var(--danger);
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    box-shadow: 0 .25rem .5rem var(--grey5);
 }
 
 input:focus:invalid,
 textarea:focus:invalid,
 select:focus:invalid {
-    border-left-color: var(--danger);
+    border-color: var(--danger);
 }
 
-input:required:valid,
-textarea:required:valid,
-select:required:valid {
-    border-left-color: var(--success);
+input:required:valid::after,
+textarea:required:valid::after,
+select:required:valid::after {
+    content: '✔';
+    display: block;
+    color: var(--success);
 }
 
 
@@ -49,33 +45,25 @@ select:required:valid {
 
 input[type="radio"],
 input[type="checkbox"] {
-    display: none;
+    display: block;
+    margin: .5rem .25rem;
     
     & + label {
         vertical-align: middle;
         display: block;
-        opacity: 1;
+        margin: -1.5rem 0 0;
     }
     & + label::before {
-        content: ' ';
+        content: '';
         display: inline-block;
         width: 1rem;
         height: 1rem;
-        background-color: var(--grey1);
+        background-color: var(--grey2);
         margin-right: 0.25rem;
         padding: 0.25rem;
         line-height: 1;
         vertical-align: middle;
         text-align: center;
-    }
-    &:required + label::after {
-        content: '*';
-        color: var(--danger);
-        font-weight: bold;
-        padding: 0 0.25rem;
-    }
-    &:required:valid + label::after {
-        color: var(--success);
     }
     &:focus + label {
         box-shadow: 0 0.25rem 0.25rem var(--grey5); 
@@ -83,7 +71,7 @@ input[type="checkbox"] {
     &:checked + label::before {
         content: '✔';
         color: var(--grey0);
-        background-color: var(--success);
+        background-color: var(--primary);
     }
 }
 
@@ -92,11 +80,11 @@ input[type="radio"]{
     & + label::before {
         padding: 0;
         border-radius: 50%;
-        background-color: var(--grey5);
-        border: solid .25rem var(--grey1);
+        background-color: var(--grey0);
+        border: solid .25rem var(--grey2);
     }
     &:checked + label::before {
         content: '';
-        background-color: var(--success);
+        background-color: var(--primary);
     }
 }
