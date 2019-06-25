@@ -1,4 +1,6 @@
-body {
+body,
+textarea,
+input {
     font: 1em/1.4 var(--font);
 }
 

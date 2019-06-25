@@ -4,6 +4,14 @@ fieldset {
     border: none;
 }
 
+legend {
+    margin: 0;
+    padding: 0;
+    position: static;
+    top: 0;
+    bottom: 0;
+}
+
 label {
     display: block;
 }
@@ -22,7 +30,6 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-    outline: none;
     box-shadow: 0 .25rem .5rem var(--grey5);
 }
 
@@ -38,6 +45,30 @@ select:required:valid::after {
     content: '✔';
     display: block;
     color: var(--success);
+}
+
+input[type="text"],
+input[type="search"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    max-width: 45rem;
+    text-overflow: ellipsis;
+}
+
+
+/* Styles for select */
+
+select {
+    max-width: 100%;
+}
+
+
+/* Styles for textarea */
+
+textarea {
+    min-height: 6rem;
 }
 
 
