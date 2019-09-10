@@ -34,7 +34,7 @@ p {
     margin: 0 0 .5rem;
 }
 
-@media (min-width: $media-medium) {
+@media (min-width: 45rem) {
     
     body {
         font-size: 1rem;
@@ -67,7 +67,7 @@ p {
     
 }
 
-@media (min-width: $media-large) {
+@media (min-width: 60rem) {
   
     h1 {
         font-size: 3rem;

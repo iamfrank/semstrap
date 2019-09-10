@@ -5,6 +5,7 @@ fieldset {
 }
 
 legend {
+    display: block;
     margin: 0;
     padding: 0;
     position: static;
@@ -24,13 +25,38 @@ select {
     padding: 0.25rem 0.5rem;
     background-color: var(--grey0);
     color: var(--grey10);
-    font-size: 1rem;
+    font: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
 }
 
 input:focus,
 textarea:focus,
 select:focus {
+    outline: 1px solid var(--primary);
     box-shadow: 0 .25rem .5rem var(--grey5);
+}
+
+textarea[readonly],
+input[readonly],
+select[readonly] {
+    border-width: 0;
+}
+
+textarea[required]::after,
+input[required]::after,
+select[required]::after {
+    content: '*';
+    color: var(--danger);
+}
+
+textarea[aria-invalid],
+textarea:invalid,
+input[aria-invalid],
+input:invalid,
+select[aria-invalid],
+select:invalid {
+    border-color: var(--danger);
 }
 
 input:focus:invalid,
@@ -76,46 +102,66 @@ textarea {
 
 input[type="radio"],
 input[type="checkbox"] {
-    display: block;
-    margin: .5rem .25rem;
-    
-    & + label {
-        vertical-align: middle;
-        display: block;
-        margin: -1.5rem 0 0;
-    }
-    & + label::before {
-        content: '';
-        display: inline-block;
-        width: 1rem;
-        height: 1rem;
-        background-color: var(--grey2);
-        margin-right: 0.25rem;
-        padding: 0.25rem;
-        line-height: 1;
-        vertical-align: middle;
-        text-align: center;
-    }
-    &:focus + label {
-        box-shadow: 0 0.25rem 0.25rem var(--grey5); 
-    }
-    &:checked + label::before {
-        content: '✔';
-        color: var(--grey0);
-        background-color: var(--primary);
-    }
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
 }
 
-input[type="radio"]{
-    
-    & + label::before {
-        padding: 0;
-        border-radius: 50%;
-        background-color: var(--grey0);
-        border: solid .25rem var(--grey2);
-    }
-    &:checked + label::before {
-        content: '';
-        background-color: var(--primary);
-    }
+input[type="radio"] + label,
+input[type="checkbox"] + label {    
+    position: relative;
+    display: block;
+        margin: 0 0 .5rem;
+}
+
+input[type="radio"] + label::before,
+input[type="checkbox"] + label::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--grey0);
+    border: solid .125rem var(--grey3);
+    margin-right: 0.25rem;
+    padding: 0.25rem;
+    line-height: 1;
+    vertical-align: middle;
+    text-align: center;
+}
+
+input[type="radio"]:focus + label,
+input[type="checkbox"]:focus + label {
+    box-shadow: 0 0.25rem 0.25rem var(--grey5);
+}
+
+input[type="radio"]:checked + label::before,
+input[type="checkbox"]:checked + label::before {
+    color: var(--grey0);
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+input[type="radio"]:disabled + label,
+input[type="checkbox"]:disabled + label {
+    color: var(--grey5);
+}
+
+input[type="radio"]:disabled + label::before,
+input[type="checkbox"]:disabled + label::before {
+    background-color: var(--grey2);
+    border-color: var(--grey2);
+}
+
+input[type="checkbox"]:checked + label::before {
+    content: '✔';
+}
+
+input[type="radio"] + label::before {    
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked + label::before {
+    content: '';
 }

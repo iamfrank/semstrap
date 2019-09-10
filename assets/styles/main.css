@@ -1,0 +1,60 @@
+/* Header */
+.hero {
+    background: url(../images/bg-img-1.jpg) no-repeat center center transparent;
+    background-size: cover;
+    color: #fff;
+    font-size: 1.25em;
+    text-shadow: 0 0 0.25rem hsla(0,0%,0%,.8);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 4rem;
+    border-bottom: solid .5rem hsl(0,0%,90%);
+}
+.brand-header {
+    font-size: 2.5em;
+}
+.byline {
+    text-align: center;
+    text-shadow: 0 0 0.125rem hsla(0,0%,0%,.9);
+    padding: .25rem;
+}
+
+/* Navigation */
+.sitenav a {
+    display: block;
+    padding: .5rem 0;
+}
+
+/* General layout */
+.container {
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100%;
+    max-width: 45rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 1rem;
+    background-color: hsla(0,0%,0%,.15);
+}
+
+@media screen and (min-width: 45rem) {
+
+    main {
+        display: grid;
+        grid-template-columns: 16rem auto ;
+        margin: 0 auto;
+        max-width: 60rem;
+    }
+    .sitenav {
+        grid-column: 1;
+    }
+    article {
+        grid-column: 2;
+        overflow-x: auto;
+        margin: 0 0 2rem;
+    }
+
+}

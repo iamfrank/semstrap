@@ -1,30 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700');
 
-$media-medium: 45rem;
-$media-large: 60rem;
-$unit: 1rem;
-
 :root {
-    --hue: 200;
-    --saturation: 10%;
     --color1: 195;
+    --color2: 129;
+    --color3: 40;
+    --color4: 1;
 
-    --grey0: hsl(var(--hue), var(--saturation), 100%);
-    --grey1: hsl(var(--hue), var(--saturation), 90%);
-    --grey2: hsl(var(--hue), var(--saturation), 80%);
-    --grey3: hsl(var(--hue), var(--saturation), 70%);
-    --grey4: hsl(var(--hue), var(--saturation), 60%);
-    --grey5: hsl(var(--hue), var(--saturation), 50%);
-    --grey6: hsl(var(--hue), var(--saturation), 40%);
-    --grey7: hsl(var(--hue), var(--saturation), 30%);
-    --grey8: hsl(var(--hue), var(--saturation), 20%);
-    --grey9: hsl(var(--hue), var(--saturation), 10%);
-    --grey10: hsl(var(--hue), var(--saturation), 0%);
+    /* Greyscale - white (grey0) to black (grey10) */
+    --grey0: hsl(200, 10%, 100%);
+    --grey1: hsl(200, 10%, 90%);
+    --grey2: hsl(200, 10%, 80%);
+    --grey3: hsl(200, 10%, 70%);
+    --grey4: hsl(200, 10%, 60%);
+    --grey5: hsl(200, 10%, 50%);
+    --grey6: hsl(200, 10%, 40%);
+    --grey7: hsl(200, 10%, 30%);
+    --grey8: hsl(200, 10%, 20%);
+    --grey9: hsl(200, 10%, 10%);
+    --grey10: hsl(200, 10%, 0%);
 
-    --primary: hsl(var(--color1), 90%, 40%);
-    --success: hsl(120, 90%, 35%);
-    --warning: hsl(60, 90%, 35%);
-    --danger: hsl(0, 90%, 35%);
+    /* Functional colors */
+    --primary: hsl(var(--color1), 83%, 31%); /* Blue */
+    --success: hsl(var(--color2), 46%, 59%); /* Green */
+    --warning: hsl(var(--color3), 71%, 64%); /* Orange */
+    --danger: hsl(var(--color4), 100%, 69%); /* Red */
 
     --font: 'Roboto', sans-serif;
 
@@ -33,4 +32,39 @@ $unit: 1rem;
     --break-small: 30rem;
     --break-medium: 45rem;
     --break-large: 60rem;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+
+    :root {
+        /*
+        --color1: 195;
+        --color2: 129;
+        --color3: 40;
+        --color4: 1;
+        */
+    
+        /* Greyscale - white (grey0) to black (grey10) */
+        /*
+        --grey0: hsl(200, 10%, 0%);
+        --grey1: hsl(200, 10%, 10%);
+        --grey2: hsl(200, 10%, 20%);
+        --grey3: hsl(200, 10%, 30%);
+        --grey4: hsl(200, 10%, 40%);
+        --grey5: hsl(200, 10%, 50%);
+        --grey6: hsl(200, 10%, 60%);
+        --grey7: hsl(200, 10%, 70%);
+        --grey8: hsl(200, 10%, 80%);
+        --grey9: hsl(200, 10%, 90%);
+        --grey10: hsl(200, 10%, 100%);
+        */
+
+        /* Functional colors */
+        
+        /*--primary: hsl(var(--color1), 83%, 61%);*/ /* Blue */
+        /*--success: hsl(var(--color2), 46%, 79%);*/ /* Green */
+        /*--warning: hsl(var(--color3), 71%, 44%);*/ /* Orange */
+        /*--danger: hsl(var(--color4), 100%, 49%);*/ /* Red */
+    }
+
 }

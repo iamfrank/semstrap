@@ -6,69 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Semstrap: Basic styling withouth the bloat</title>
         <link rel="stylesheet" href="./dist/semstrap.css">
-        <style>
-
-            /* Header */
-            .hero {
-                background: url(./assets/images/bg-img-1.jpg) no-repeat center center transparent;
-                background-size: cover;
-                color: #fff;
-                font-size: 1.25em;
-                text-shadow: 0 0 0.25rem hsla(0,0%,0%,.8);
-                display: flex;
-                flex-flow: column;
-                align-items: center;
-                padding: 4rem;
-                border-bottom: solid .5rem hsl(0,0%,90%);
-            }
-            .brand-header {
-                font-size: 2.5em;
-            }
-            .byline {
-                text-align: center;
-                text-shadow: 0 0 0.125rem hsla(0,0%,0%,.9);
-                padding: .25rem;
-            }
-
-            /* Navigation */
-            .sitenav a {
-                display: block;
-                padding: .5rem 0;
-            }
-
-            /* General layout */
-            .container {
-                margin: 0 auto;
-                padding: 1rem;
-                width: 100%;
-                max-width: 45rem;
-            }
-
-            /* Footer */
-            footer {
-                margin-top: 1rem;
-                background-color: hsla(0,0%,0%,.15);
-            }
-
-            @media screen and (min-width: 45rem) {
-
-                main {
-                    display: grid;
-                    grid-template-columns: 16rem auto ;
-                    margin: 0 auto;
-                    max-width: 60rem;
-                }
-                .sitenav {
-                    grid-column: 1;
-                }
-                article {
-                    grid-column: 2;
-                    overflow-x: auto;
-                }
-
-            }
-
-        </style>
+        <link rel="stylesheet" href="./assets/styles/main.css">
     </head>    
 
     <body>
@@ -99,7 +37,7 @@
         
             <article id="about">
 
-                <h1>About Semstrap</h1>
+                <h2>About Semstrap</h2>
                 <p>
                     Many developers turn to frontend frameworks just to easily improve the looks of their web projects. Unfortunately this approach results in a loot of framework-specific code like class names and wrapping elements being added to your HTML. Sometimes you even end up adding a bit of code from a another web project that relies on a different front end framework and you get a mess of dependencies and conflicting class names.
                 </p>
@@ -141,14 +79,14 @@
             </article>
 
             <article id="article">
-                <h1>Article</h1>
+                <h2>Article</h2>
                 <p>The <em>&lt;article&gt;</em> element is a semantic wrapper for anything that can be percieved as a single unit of information or functionality. Examples are a blog post or a signup form.</p>
                 <p>Articles are semantic containers and they don't need a lot of styling (we save that for the content), but we assume a padding inside any article would make it's content easier to distinguish from other parts of your webpage.</p>
                 <article style="border: dashed 1px #eee;">Stuff inside an article</article>
             </article>
 
             <article id="buttons">
-                <h1>Buttons</h1>
+                <h2>Buttons</h2>
                 <button onclick="alert('It was touched');">Touch me</button>
                 <button disabled>Disabled</button>
                 <h2>Buttons in forms </h2>
@@ -162,12 +100,15 @@
             </article>
 
             <article id="code">
-                <h1>Code</h1>
+                <h2>Code</h2>
                 <code>Some code</code>
             </article>
 
             <article id="forms">
-                <h1>Forms</h1>
+                <h2>Forms</h2>
+
+                <p><a href="./pages/form-examples.html">Check out more form examples.</a></p>
+
                 <form>
                     <fieldset>
                         <label for="myInputField1">Text entry</label>
@@ -186,117 +127,10 @@
                     </fieldset>
                 </form>
     
-                <h2>Special input fields</h2>
-                <p>There are specialized input fields available. These look like the text input field but trigger different keyboard layouts on mobile and tablet devices and can make use of validation.</p>
-    
-                <form>
-                    <fieldset>    
-                        <label for="mySearchField">Search</label>
-                        <input id="mySearchField" type="search" placeholder="Enter search">
-                    </fieldset>
-                    <fieldset>
-                        <label for="myEmailField">Email</label>
-                        <input id="myEmailField" type="email" placeholder="Enter email address">
-                    </fieldset>
-                    <fieldset>
-                        <label for="myURLField">URL</label>
-                        <input id="myURLField" type="url" placeholder="Enter URL">
-                    </fieldset>
-                    <fieldset>
-                        <label for="myPhoneField">Phone</label>
-                        <input id="myPhoneField" type="phone" placeholder="Enter phone number">
-                    </fieldset>
-                    <fieldset>
-                        <label for="myPasswordField">Password</label>
-                        <input id="myPasswordField" type="password" placeholder="Enter password">
-                    </fieldset>
-                    <fieldset>
-                        <label for="myFileField">File</label>
-                        <input id="myFileField" type="file">
-                    </fieldset>
-                </form>
-                <h2>Checkbox</h2>
-                <form>
-                    <fieldset>
-                        <input id="myCheckboxA" type="checkbox" checked>
-                        <label for="myCheckboxA">Checkbox A</label>
-                        <input id="myCheckboxB" type="checkbox">
-                        <label for="myCheckboxB">Checkbox B</label>
-                    </fieldset>
-                </form>
-                <h2>Radio button</h2>
-    
-                <form>
-                    <fieldset>    
-                        
-                        <input id="myRadioA" type="radio" name="radioButtonSet" checked>
-                        <label for="myRadioA">Radio button A</label>
-                        
-                        <input id="myRadioB" type="radio" name="radioButtonSet">
-                        <label for="myRadioB">Radio button B</label>
-                            
-                        <input id="myRadioC" type="radio" name="radioButtonSet">
-                        <label for="myRadioC">Radio button C</label>
-                        
-                    </fieldset>
-                </form>
-                <h2>Required input</h2>
-                <p>Adding the <em>required</em> attribute to an input field will make will make it impossible to submit the form without entering a value.</p>
-    
-                <form>
-                    <fieldset>
-                        <label for="myInputField2">Text field</label>
-                        <input required id="myInputField2" type="text" placeholder="Enter some text">
-                    </fieldset>
-                    <fieldset>
-                        <label for="reqSelect">Select field</label>
-                        <select id="reqSelect" required placeholder="Pick one">
-                            <option value="one">One</option>
-                            <option value="two">Two</option>
-                            <option disabled>Disabled option</option>
-                        </select>
-                    </fieldset>
-                    <fieldset>
-                        <label for="reqTextarea">Textarea field</label>
-                        <textarea id="reqTextarea" required></textarea>
-                    </fieldset>
-                    <fieldset>
-                        <input required type="checkbox" id="reqCheckBox">
-                        <label for="reqCheckBox">Checkbox</label>
-                    </fieldset>
-                    <fieldset>
-                        <input required type="radio" value="yes" name="radiogroup" id="reqRadio1">
-                        <label for="reqRadio1">Required "yes"</label>
-                        <input required type="radio" value="no" name="radiogroup" id="reqRadio2">
-                        <label for="reqRadio2">Required "No"</label>
-                    </fieldset>
-                    <fieldset>
-                        <input type="submit" value="Submit">
-                    </fieldset>
-                </form>
-                <h2>Validating required inputs</h2>
-                <p>
-                    Browsers will automatically do some basic validation based on the input type.
-                    Below are som examples of input fields that do basic validation and visually indicate failure/success.
-                    The latter example uses the <em>pattern</em> attribute to validate using a regex pattern.
-                </p>
-                <form>
-                    <fieldset>
-                        <label for="validEmailInput">Validating email:</label>
-                        <input required id="validEmailInput" type="email" placeholder="Enter a valid email address">
-                    </fieldset>
-                    <fieldset>
-                        <label for="validEmailInput">Validating URL using regex:</label>
-                        <input required id="validEmailInput" type="url" pattern="https?://.+" placeholder="Anything that starts with 'http'">
-                    </fieldset>
-                    <fieldset>
-                        <input type="submit" value="Submit">
-                    </fieldset>
-                </form>
             </article>
 
             <article id="definition-list">
-                <h1>Definition list</h1>
+                <h2>Definition list</h2>
                 <dl>
                     <dt>Term A</dt>
                     <dd>Definition description A</dd>
@@ -308,7 +142,7 @@
             </article>
 
             <article id="headings">
-                <h1>Headings</h1>
+                <h2>Headings</h2>
                 <p>
                     Headings are defined with the &lt;h1> to &lt;h6> tags.
                     &lt;h1> defines the top level heading
@@ -322,12 +156,12 @@
             </article>
 
             <article id="links">
-                <h1>Links</h1>
+                <h2>Links</h2>
                 <a href="#">Going somewhere?</a>
             </article>
 
             <article id="tables">
-                <h1>Tables</h1>
+                <h2>Tables</h2>
                 <p>Tables are for displaying large datasets in a structured manner.</p>
                 <table>
                     <thead>
@@ -358,7 +192,7 @@
             </article>
 
             <article id="hr">
-                <h1>Thematic break (hr)</h1>
+                <h2>Thematic break (hr)</h2>
                 <p>Some content before divider</p>
                 <hr>
                 <p>Some content after divider</p>

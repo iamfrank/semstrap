@@ -46,6 +46,7 @@ input[disabled]:active {
     opacity: .5;
     box-shadow: none;
     cursor: default;
-    background-color: hsl(var(--color1), 40%, 50%);
-    border-color: hsl(var(--color1), 40%, 50%);
+    background-color: var(--grey1);
+    border-color: var(--grey5);
+    color: var(--grey5);
 }
