@@ -1,0 +1,51 @@
+input[type="radio"] {
+    position: absolute;
+    top: auto;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
+}
+
+input[type="radio"] + label {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+}
+
+input[type="radio"] + label::before {
+    background-color: var(--grey0);
+    border: .125rem solid var(--grey4);
+    border-radius: 50%;
+    content: '';
+    display: inline-block;
+    height: 1.5rem;
+    margin: .125rem .5rem .125rem 0;
+    text-align: center;
+    transition: all .1s ease-out;
+    width: 1.5rem;
+}
+
+input[type=radio]:checked + label::before {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    box-shadow: inset 0 0 0 .125em var(--grey0);
+}
+
+
+input[type="radio"]:focus + label {
+    box-shadow: 0 0.25rem 0.25rem var(--grey5);
+}
+
+input[type="radio"]:disabled + label {
+    color: var(--grey4);
+}
+
+input[type="radio"]:disabled + label::before {
+    background-color: var(--grey2);
+    border-color: var(--grey2);
+}

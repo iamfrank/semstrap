@@ -1,0 +1,31 @@
+textarea {
+    background-color: var(--grey0);
+    border: solid 1px var(--grey3);
+    color: var(--grey10);
+    display: inline-block;
+    font: inherit;
+    letter-spacing: inherit;
+    max-width: 45rem;
+    min-height: 6rem;
+    padding: 0.25rem 0.5rem;
+    text-overflow: ellipsis;
+    width: 100%;
+    word-spacing: inherit;
+}
+
+textarea:focus {
+    outline: 1px solid var(--primary);
+    box-shadow: 0 .25rem .5rem var(--grey5);
+}
+
+textarea[aria-invalid]:focus,
+textarea:invalid:focus {
+    border-color: var(--danger);
+}
+
+textarea[readonly],
+textarea:disabled {
+    background-color: var(--grey2);
+    border-color: var(--grey2);
+    color: var(--grey4);
+}
