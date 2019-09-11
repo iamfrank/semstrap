@@ -1,3 +1,4 @@
+@import './input.css';
 @import './input-radio.css';
 @import './input-checkbox.css';
 @import './textarea.css';
@@ -6,7 +7,7 @@
 fieldset {
     display: block;
     padding: 0;
-    margin: 0 0 1rem;
+    margin: 0 0 1.5rem;
     border: none;
 }
 
@@ -22,54 +23,5 @@ legend {
 
 label {
     display: block;
-    margin-top: 1rem;
-}
-
-input {
-    background-color: var(--grey0);
-    border: solid 1px var(--grey3);
-    color: var(--grey10);
-    display: inline-block;
-    font: inherit;
-    letter-spacing: inherit;
-    max-width: 45rem;
-    padding: 0.25rem 0.5rem;
-    text-overflow: ellipsis;
-    width: auto;
-    word-spacing: inherit;
-}
-
-input:focus {
-    outline: 1px solid var(--primary);
-    box-shadow: 0 .25rem .5rem var(--grey5);
-}
-
-input[readonly] {
-    border-width: 0;
-}
-
-input[required]::after {
-    content: '*';
-    color: var(--danger);
-}
-
-input[aria-invalid],
-input:invalid {
-    border-color: var(--danger);
-}
-
-input:focus:invalid {
-    border-color: var(--danger);
-}
-
-input:required:valid::after {
-    content: '✔';
-    display: block;
-    color: var(--success);
-}
-
-input[type="range"],
-input[type="file"],
-input[type="image"] {
-    border: none;
+    margin: .75rem 0 0;
 }

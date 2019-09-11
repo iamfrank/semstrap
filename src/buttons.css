@@ -6,14 +6,17 @@ input[type="reset"] {
     background-color: var(--grey0);
     border: solid .125rem var(--primary);
     border-radius: .125rem;
-    box-shadow: -.125rem .125rem .125rem  hsla(0,0%,0%,.125);
+    box-shadow: var(--shadow-dim);
     color: var(--primary);
     cursor: pointer;
     display: inline-block;
     font-size: .9rem;
-    margin-bottom: 0.33rem;
+    height: 2.25rem;
+    margin-bottom: 0.25rem;
     padding: .33rem .66rem;
     width: auto;
+    outline: none;
+    transition: all .2s;
 }
 
 input[type="submit"] {
@@ -24,8 +27,16 @@ input[type="submit"] {
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
-input[type="submit"]:hover {
-    box-shadow: -.125rem .125rem .25rem  hsla(0,0%,0%,.5);
+input[type="submit"]:hover,
+button:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus {
+    box-shadow: var(--shadow-dark);
+    background-color: hsl(var(--color1), 80%, 40%);
+    border-color: hsl(var(--color1), 80%, 40%);
+    outline: none;
+    color: var(--grey0);
 }
 
 button:active,
@@ -36,21 +47,10 @@ input[type="reset"]:active {
     border-color: hsl(var(--color1), 80%, 30%);
 }
 
-button:focus,
-input[type="submit"]:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus {
-    box-shadow: 0 .25rem .5rem  var(--grey5);
-    outline: none;
-}
-
 button:disabled,
 input[type="submit"]:disabled,
 input[type="button"]:disabled,
-input[type="reset"]:disabled,
-input[type="submit"]:disabled:hover,
-input[type="button"]:disabled:hover,
-input[type="reset"]:disabled:hover {
+input[type="reset"]:disabled {
     box-shadow: none;
     cursor: default;
     background-color: transparent;

@@ -14,7 +14,8 @@ input[type="radio"] + label {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-    margin-top: 0.5rem;
+    margin: 0 0 .5rem;
+    position: relative;
 }
 
 input[type="radio"] + label::before {
@@ -30,15 +31,15 @@ input[type="radio"] + label::before {
     width: 1.5rem;
 }
 
-input[type=radio]:checked + label::before {
-    background-color: var(--primary);
-    border-color: var(--primary);
-    box-shadow: inset 0 0 0 .125em var(--grey0);
+input[type="radio"]:focus + label::before,
+input[type="radio"] + label:hover::before {
+    border-color: var(--grey5);
+    box-shadow: var(--shadow-dark);
 }
 
-
-input[type="radio"]:focus + label {
-    box-shadow: 0 0.25rem 0.25rem var(--grey5);
+input[type="radio"]:checked + label::before {
+    background-color: var(--primary);
+    box-shadow: inset 0 0 0 .25rem var(--grey0);
 }
 
 input[type="radio"]:disabled + label {

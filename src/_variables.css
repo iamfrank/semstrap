@@ -32,6 +32,9 @@
     --break-small: 30rem;
     --break-medium: 45rem;
     --break-large: 60rem;
+
+    --shadow-dim: 0 .125rem .25rem var(--grey4);
+    --shadow-dark: 0 .25rem .5rem var(--grey4);
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -65,6 +68,11 @@
         /*--success: hsl(var(--color2), 46%, 79%);*/ /* Green */
         /*--warning: hsl(var(--color3), 71%, 44%);*/ /* Orange */
         /*--danger: hsl(var(--color4), 100%, 49%);*/ /* Red */
+
+        /*
+        --shadow-dim: 0 .125rem .25rem var(--grey4);
+        --shadow-dark: 0 .25rem .5rem var(--grey4);
+        */
     }
 
 }

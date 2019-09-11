@@ -12,19 +12,16 @@ select {
     word-spacing: inherit;
 }
 
-select:focus {
-    box-shadow: 0 .25rem .5rem var(--grey5);
-    outline: 1px solid var(--primary);
+select:focus,
+select:hover {
+    outline: none;
+    border-color: var(--grey4);
+    box-shadow: var(--shadow-dark);
 }
 
-select[aria-invalid]:focus,
-select:invalid:focus {
-    border-color: var(--danger);
-}
-
-select[readonly],
 select:disabled {
-    border-color: var(--grey2);
-    color: var(--grey4);
     background-color: var(--grey2);
+    color: var(--grey4);
+    border-color: var(--grey2);
+    box-shadow: none;
 }

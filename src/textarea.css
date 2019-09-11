@@ -13,19 +13,17 @@ textarea {
     word-spacing: inherit;
 }
 
-textarea:focus {
-    outline: 1px solid var(--primary);
-    box-shadow: 0 .25rem .5rem var(--grey5);
-}
-
-textarea[aria-invalid]:focus,
-textarea:invalid:focus {
-    border-color: var(--danger);
+textarea:focus,
+textarea:hover {
+    outline: none;
+    border-color: var(--grey4);
+    box-shadow: var(--shadow-dark);
 }
 
 textarea[readonly],
 textarea:disabled {
     background-color: var(--grey2);
-    border-color: var(--grey2);
     color: var(--grey4);
+    border-color: var(--grey2);
+    box-shadow: none;
 }

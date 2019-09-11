@@ -1,0 +1,84 @@
+input[type="text"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+    background-color: var(--grey0);
+    border: solid 1px var(--grey3);
+    color: var(--grey10);
+    display: inline-block;
+    font: inherit;
+    letter-spacing: inherit;
+    max-width: 45rem;
+    padding: 0.25rem 0.5rem;
+    text-overflow: ellipsis;
+    width: auto;
+    word-spacing: inherit;
+    transition: all .2s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus,
+input[type="text"]:hover,
+input[type="date"]:hover,
+input[type="datetime-local"]:hover,
+input[type="email"]:hover,
+input[type="month"]:hover,
+input[type="number"]:hover,
+input[type="password"]:hover,
+input[type="search"]:hover,
+input[type="tel"]:hover,
+input[type="time"]:hover,
+input[type="url"]:hover,
+input[type="week"]:hover {
+    outline: none;
+    border-color: var(--grey4);
+    box-shadow: var(--shadow-dark);
+}
+
+input[type="text"]:disabled,
+input[type="date"]:disabled,
+input[type="datetime-local"]:disabled,
+input[type="email"]:disabled,
+input[type="month"]:disabled,
+input[type="number"]:disabled,
+input[type="password"]:disabled,
+input[type="search"]:disabled,
+input[type="tel"]:disabled,
+input[type="time"]:disabled,
+input[type="url"]:disabled,
+input[type="week"]:disabled,
+input[type="text"]:read-only,
+input[type="date"]:read-only,
+input[type="datetime-local"]:read-only,
+input[type="email"]:read-only,
+input[type="month"]:read-only,
+input[type="number"]:read-only,
+input[type="password"]:read-only,
+input[type="search"]:read-only,
+input[type="tel"]:read-only,
+input[type="time"]:read-only,
+input[type="url"]:read-only,
+input[type="week"]:read-only {
+    background-color: var(--grey2);
+    color: var(--grey4);
+    border-color: var(--grey2);
+    box-shadow: none;
+}
