@@ -5,7 +5,7 @@ textarea {
     display: inline-block;
     font: inherit;
     letter-spacing: inherit;
-    max-width: 45rem;
+    max-width: 35rem;
     min-height: 6rem;
     padding: 0.25rem 0.5rem;
     text-overflow: ellipsis;
