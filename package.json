@@ -3,12 +3,11 @@
     "version": "1.0.0",
     "description": "Semstrap adds simple styles for semantic HTML that don't make your eyes bleed.",
     "main": "src/_index.css",
-    "dependencies": {},
     "devDependencies": {
-        "cssnano": "^5.1.14",
+        "cssnano": "^6.0.1",
+        "postcss": "^8.4.31",
         "postcss-cli": "^10.1.0",
-        "postcss-import": "^12.0.1",
-        "precss": "^4.0.0"
+        "postcss-import": "^15.1.0"
     },
     "scripts": {
         "build": "node_modules/.bin/postcss src/_index.css -o dist/semstrap.css"
