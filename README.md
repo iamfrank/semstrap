@@ -1,5 +1,6 @@
-
 # Semstrap
+
+> **UPDATE** Others have had the same idea of creating a style library for semantic HTML. Check out the excellent [PicoCSS](https://picocss.com/) and my other project: [SDFI Design System (Danish).](https://sdfidk.github.io/designsystem/)
 
 Semstrap ("semantic bootstrap" :) ) is a collection of CSS styles that add a modern look and feel to web projects. It's simply a collection of styles that make straightforward semantic HTML look a little nicer.
 
